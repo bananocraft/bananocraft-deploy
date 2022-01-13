@@ -16,7 +16,7 @@ services:
       - MAX_PLAYERS=150
       - OPS=k1rby,mconstant
       - DIFFICULTY=normal
-      - SERVER_NAME=Akashlytics
+      - SERVER_NAME=BananocraftAkash
       - MEMORY=12G
       - TYPE=PAPER
     expose:
