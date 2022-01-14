@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: itzg/minecraft-server:java17
+    image: xmconstantx/bananocraftserver
     env:
       - EULA=TRUE
       - PVP=TRUE
@@ -19,6 +19,10 @@ services:
       - SERVER_NAME=BananocraftAkash
       - MEMORY=12G
       - TYPE=PAPER
+      - BANANODE_IP=172.20.0.2
+      - BANANOCRAFT_WALLET_SEED=secretseed
+      - WALLET_ID=walletid
+      - MASTER_WALLET=masterwallet
     expose:
       - port: 25565
         protocol: tcp
