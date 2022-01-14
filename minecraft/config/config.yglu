@@ -1,10 +1,10 @@
-IP: "INSERT NODE IP HERE"
-walletSeed: "INSERT WALLET SEED HERE"
+IP: !? $env["BANANODE_IP"]
+walletSeed: !? $env["BANANOCRAFT_WALLET_SEED"]
 # Don't touch walletID unless you know what you're doing
-walletID: "INSERT WALLET ID FROM NODE HERE"
+walletID: !? $env["WALLET_ID"]
 # Don't touch masterWallet unless you know what you're doing
-masterWallet: "INSERT MASTER WALLET HERE"
-mongoURI: "INSERT MONGOURI HERE"
+masterWallet: !? $env["MASTER_WALLET"]
+mongoURI: mongo:27017
 
 multiplier: "100000000000000000000000000000" #banano
 #multiplier: "10000000000000000000000000" #nano
