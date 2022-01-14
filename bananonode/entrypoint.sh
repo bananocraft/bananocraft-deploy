@@ -11,3 +11,5 @@ mv snapshot.ldb /root/BananoData/data.ldb
 echo "unzipped and copied snapshot... starting node"
 
 exec /usr/bin/entry.sh bananode daemon -l
+
+tail -f /dev/null > /dev/null 2>&1
