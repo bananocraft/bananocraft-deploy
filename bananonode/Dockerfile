@@ -3,11 +3,9 @@ FROM bananocoin/banano
 RUN apt-get update
 RUN apt-get install curl gzip -y
 
-RUN curl https://banano.steampoweredtaco.com/download/snapshot.ldb.gz -o snapshot.ldb.gz
+COPY --chmod=755 entrypoint.sh .
 
-RUN gunzip snapshot.ldb.gz
+COPY config /usr/share/nano/config
 
-RUN mkdir /root/BananoData
-
-RUN mv snapshot.ldb /root/BananoData/data.ldb
+ENTRYPOINT ["./entrypoint.sh"]
 

@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   bananonode:
-    image: bananocoin/banano
+    image: xmconstantx/bananocraftnode
     expose:
       - port: 7071
         as: 7071

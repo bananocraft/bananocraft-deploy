@@ -4,7 +4,7 @@ address = "::ffff:0.0.0.0"
 
 # Enable or disable control-level requests
 # type:bool
-enable_control = false
+enable_control = true
 
 # Enable or disable RPC.
 # type:bool
