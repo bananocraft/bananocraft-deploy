@@ -2,7 +2,7 @@ IP: !? $env["BANANODE_IP"]
 walletSeed: !? $env["BANANOCRAFT_WALLET_SEED"]
 walletID: !? $env["WALLET_ID"]
 masterWallet: !? $env["MASTER_WALLET"]
-mongoURI: mongo:27017
+mongoURI: !? $env["MONGO_URI"]
 
 multiplier: "100000000000000000000000000000"
 
