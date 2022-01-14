@@ -1,0 +1,116 @@
+---
+version: "2.0"
+
+services:
+  bananonode:
+    image: xmconstantx/bananocraftnode:master
+    expose:
+      - port: 7071
+        as: 7071
+        to:
+          - global: false
+      - port: 7072
+        as: 7072
+        to:
+          - global: false
+      - port: 7074
+        as: 7074
+        to:
+          - global: false
+  minecraft:
+    image: xmconstantx/bananocraftserver:master
+    depends_on:
+      - bananonode
+      - mongo
+    env:
+      - EULA=TRUE
+      - PVP=TRUE
+      - MOTD="Bananocraft Akash POC"
+      - MODE=creative
+      - ENABLE_COMMAND_BLOCK=true
+      - ENABLE_RCON=false
+      - SPAWN_PROTECTION=34
+      - HARDCORE=false
+      - MAX_PLAYERS=150
+      - OPS=$BANANOCRAFT_OPS
+      - DIFFICULTY=normal
+      - SERVER_NAME=BananocraftAkash
+      - MEMORY=12G
+      - TYPE=PAPER
+      - BANANOCRAFT_WALLET_SEED=$BANANOCRAFT_WALLET_SEED
+      - WALLET_ID=$WALLET_ID
+      - MASTER_WALLET=$MASTER_WALLET
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+      - MONGO_URI=$MONGO_URI
+    expose:
+      - port: 25565
+        protocol: tcp
+        to:
+          - global: true
+  mongo:
+    image: mongo:3.2
+    env:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+      - MONGO_INITDB_DATABASE=BananoCraft
+    expose:
+      - port: 27017
+        protocol: tcp
+        to:
+          - global: false
+profiles:
+  compute:
+    bananonode:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 512Mi
+        storage:
+          size: 50Gi
+    minecraft:
+      resources:
+        cpu:
+          units: 10
+        memory:
+          size: 16Gi
+        storage:
+          size: 50Gi
+    mongo:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 512Mi
+        storage:
+          size: 20Gi
+  placement:
+    westcoast:
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+      pricing:
+        bananonode:
+          denom: uakt
+          amount: 1000
+        minecraft:
+          denom: uakt
+          amount: 1000
+        mongo:
+          denom: uakt
+          amount: 1000
+
+deployment:
+  bananonode:
+    westcoast:
+      profile: bananonode
+      count: 1
+  minecraft:
+    westcoast:
+      profile: web
+      count: 1
+  mongo:
+    westcoast:
+      profile: mongo
+      count: 1
