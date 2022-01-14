@@ -23,7 +23,7 @@ services:
       - NODE_ACCOUNT=ban_1dd7w8z7cx57e4u4h45rcr399zgpnfcsqi61ifbxcowoauox1i9sqosyd6wu
     expose:
       - port: 80
-        as: 8072
+        as: 80
         to:
           - global: true
 profiles:
