@@ -9,4 +9,6 @@ gunzip snapshot.ldb.gz
 
 mv snapshot.ldb /root/BananoData/data.ldb
 
+echo "unzipped and copied snapshot... starting node"
+
 eval /usr/bin/entry.sh bananode daemon -l
