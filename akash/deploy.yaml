@@ -108,7 +108,7 @@ deployment:
       count: 1
   minecraft:
     westcoast:
-      profile: web
+      profile: minecraft
       count: 1
   mongo:
     westcoast:
