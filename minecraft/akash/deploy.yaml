@@ -19,10 +19,13 @@ services:
       - SERVER_NAME=BananocraftAkash
       - MEMORY=12G
       - TYPE=PAPER
-      - BANANODE_IP=172.20.0.2
-      - BANANOCRAFT_WALLET_SEED=secretseed
-      - WALLET_ID=walletid
-      - MASTER_WALLET=masterwallet
+      - BANANODE_IP=$BANANODE_IP
+      - BANANOCRAFT_WALLET_SEED=$BANANOCRAFT_WALLET_SEED
+      - WALLET_ID=$WALLET_ID
+      - MASTER_WALLET=$MASTER_WALLET
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+      - MONGO_URI=$MONGO_URI
     expose:
       - port: 25565
         protocol: tcp

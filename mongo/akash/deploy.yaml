@@ -1,0 +1,40 @@
+---
+version: "2.0"
+
+services:
+  mongo:
+    image: mongo:3.2
+    env:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+      - MONGO_INITDB_DATABASE=BananoCraft
+    expose:
+      - port: 27017
+        protocol: tcp
+        to:
+          - global: true
+profiles:
+  compute:
+    mongo:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 512Mi
+        storage:
+          size: 20Gi
+  placement:
+    westcoast:
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+      pricing:
+        mongo:
+          denom: uakt
+          amount: 1000
+
+deployment:
+  mongo:
+    westcoast:
+      profile: mongo
+      count: 1

@@ -3,8 +3,6 @@ set -eE -o pipefail
 
 yglu config.yglu > config.yml
 
-cat config.yml
-
 mkdir -p plugins/BananoEconomy
 
 cp config.yml ./plugins/BananoEconomy/config.yml
