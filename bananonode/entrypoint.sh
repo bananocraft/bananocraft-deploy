@@ -9,4 +9,4 @@ gunzip snapshot.ldb.gz
 
 mv snapshot.ldb /root/BananoData/data.ldb
 
-/usr/bin/entry.sh bananode daemon -l
+eval /usr/bin/entry.sh bananode daemon -l
