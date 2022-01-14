@@ -1,0 +1,68 @@
+---
+version: "2.0"
+
+services:
+  bananonode:
+    image: xmconstantx/bananocraftnode:master
+    expose:
+      - port: 7071
+        as: 7071
+        to:
+          - global: true
+      - port: 7072
+        as: 7072
+        to:
+          - global: true
+      - port: 7074
+        as: 7074
+        to:
+          - global: true
+  bananonodemonitor:
+    image: xmconstantx/bananonodemonitor:akash
+    env:
+      - NODE_ACCOUNT=ban_1dd7w8z7cx57e4u4h45rcr399zgpnfcsqi61ifbxcowoauox1i9sqosyd6wu
+    expose:
+      - port: 80
+        as: 8072
+        to:
+          - global: true
+profiles:
+  compute:
+    bananonode:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 512Mi
+        storage:
+          size: 50Gi
+    bananonodemonitor:
+      resources:
+        cpu:
+          units: 0.5
+        memory:
+          size: 256Mi
+        storage:
+          size: 100Mi
+  placement:
+    westcoast:
+      signedBy:
+        anyOf:
+          - "akash1365yvmc4s7awdyj3n2sav7xfx76adc6dnmlx63"
+      pricing:
+        bananonode:
+          denom: uakt
+          amount: 100
+        bananonodemonitor:
+          denom: uakt
+          amount: 100
+
+deployment:
+  bananonode:
+    westcoast:
+      profile: bananonode
+      count: 1
+  bananonodemonitor:
+    westcoast:
+      profile: bananonodemonitor
+      count: 1
