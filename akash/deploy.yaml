@@ -8,15 +8,15 @@ services:
       - port: 7071
         as: 7071
         to:
-          - global: false
+          - global: true
       - port: 7072
         as: 7072
         to:
-          - global: false
+          - global: true
       - port: 7074
         as: 7074
         to:
-          - global: false
+          - global: true
   minecraft:
     image: xmconstantx/bananocraftserver:master
     depends_on:
