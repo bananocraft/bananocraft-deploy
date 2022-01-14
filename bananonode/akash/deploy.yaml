@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   bananonode:
-    image: xmconstantx/bananocraftnode
+    image: xmconstantx/bananocraftnode:master
     expose:
       - port: 7071
         as: 7071
@@ -26,7 +26,7 @@ profiles:
         memory:
           size: 512Mi
         storage:
-          size: 20Gi
+          size: 50Gi
   placement:
     westcoast:
       signedBy:

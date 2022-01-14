@@ -3,8 +3,7 @@ set -Ee -o pipefail
 
 mkdir /root/BananoData
 
-curl https://banano.steampoweredtaco.com/download/snapshot.ldb.gz -o snapshot.ldb.gz
-
+wget https://banano.steampoweredtaco.com/download/snapshot.ldb.gz -q --show-progress
 gunzip snapshot.ldb.gz
 
 mv snapshot.ldb /root/BananoData/data.ldb

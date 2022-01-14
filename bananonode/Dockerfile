@@ -1,7 +1,7 @@
 FROM bananocoin/banano
 
 RUN apt-get update
-RUN apt-get install curl gzip -y
+RUN apt-get install curl gzip wget -y
 
 COPY --chmod=755 entrypoint.sh .
 
