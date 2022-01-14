@@ -1,15 +1,10 @@
 IP: !? $env["BANANODE_IP"]
 walletSeed: !? $env["BANANOCRAFT_WALLET_SEED"]
-# Don't touch walletID unless you know what you're doing
 walletID: !? $env["WALLET_ID"]
-# Don't touch masterWallet unless you know what you're doing
 masterWallet: !? $env["MASTER_WALLET"]
 mongoURI: mongo:27017
 
-multiplier: "100000000000000000000000000000" #banano
-#multiplier: "10000000000000000000000000" #nano
+multiplier: "100000000000000000000000000000"
 
 exploreaccount: "https://creeper.banano.cc/explorer/account/" #banano
-#exploreaccount: "https://nanocrawler.cc/explorer/account/" #nano
 exploreblock: "https://creeper.banano.cc/explorer/block/" #banano
-#exploreblock: "https://nanocrawler.cc/explorer/block/" #nano
