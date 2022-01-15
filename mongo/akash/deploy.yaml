@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   mongo:
-    image: mongo:3.2
+    image: xmconstantx/bananocraftmongo:akash
     env:
       - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
