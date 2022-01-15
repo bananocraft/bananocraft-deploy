@@ -7,25 +7,25 @@ services:
     env:
       - EULA=TRUE
       - PVP=TRUE
-      - MOTD="Bananocraft Akash POC"
-      - MODE=creative
+      - MOTD="HardCore Survival Bananocraft Akash POC"
+      - MODE=survival
       - ENABLE_COMMAND_BLOCK=true
       - ENABLE_RCON=false
       - SPAWN_PROTECTION=34
-      - HARDCORE=false
-      - MAX_PLAYERS=150
-      - OPS=k1rby,mconstant
+      - HARDCORE=true
+      - MAX_PLAYERS=20
+      - OPS=asdfdsaf,asdfdsaf
       - DIFFICULTY=normal
-      - SERVER_NAME=BananocraftAkash
-      - MEMORY=12G
-      - TYPE=PAPER
-      - BANANODE_IP=$BANANODE_IP
-      - BANANOCRAFT_WALLET_SEED=$BANANOCRAFT_WALLET_SEED
-      - WALLET_ID=$WALLET_ID
-      - MASTER_WALLET=$MASTER_WALLET
-      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
-      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
-      - MONGO_URI=$MONGO_URI
+      - SERVER_NAME=HardcoreSurvivalBananocraftAkash
+      - MEMORY=4G
+      - TYPE=PURPUR
+      - BANANODE_IP=asdfadsf
+      - BANANOCRAFT_WALLET_SEED=asdfadsfadsf
+      - WALLET_ID=asdfdsafadsf
+      - MASTER_WALLET=asdfadsfadsf
+      - MONGO_INITDB_ROOT_USERNAME=asdfdsafa
+      - MONGO_INITDB_ROOT_PASSWORD=asdfdsafasdf
+      - MONGO_URI=mongodb://asfdsaf:asdfsdaf@asdfdsafdsafadsf:32672
     expose:
       - port: 25565
         protocol: tcp
@@ -36,18 +36,18 @@ profiles:
     web:
       resources:
         cpu:
-          units: 10
+          units: 4
         memory:
-          size: 16Gi
+          size: 6Gi
         storage:
-          size: 50Gi
+          size: 5Gi
   placement:
     westcoast:
       attributes:
       pricing:
         web:
           denom: uakt
-          amount: 1000
+          amount: 100
 
 deployment:
   web:

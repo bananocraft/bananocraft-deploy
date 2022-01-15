@@ -9,6 +9,8 @@ RUN mkdir /opt/bananoNodeMonitor
 
 RUN git -C /opt/bananoNodeMonitor pull || git clone https://github.com/BananoTools/bananoNodeMonitor.git /opt/bananoNodeMonitor
 
+COPY config.php .
+
 COPY --chmod=755 entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

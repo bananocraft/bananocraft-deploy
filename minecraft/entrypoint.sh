@@ -9,4 +9,8 @@ mkdir -p plugins/BananoEconomy
 
 cp config.yml ./plugins/BananoEconomy/config.yml
 
+echo "root:$SSH_PASSWORD" | chpasswd
+
+sshd
+
 source /start

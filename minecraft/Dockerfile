@@ -1,10 +1,5 @@
 FROM itzg/minecraft-server:master
 
-RUN apt-get update
-RUN apt-get install python3-pip -y
-
-RUN pip3 install yglu
-
 ENV YGLU_ENABLE_ENV=true
 ENV BANANOCRAFT_WALLET_SEED=$BANANOCRAFT_WALLET_SEED
 ENV WALLET_ID=$WALLET_ID
@@ -13,6 +8,19 @@ ENV BANANODE_IP=bananode
 ENV MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
 ENV MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
 ENV MONGO_URI=$MONGO_URI
+ENV SSH_USER=$SSH_USER
+ENV SSH_PASSWORD=$SSH_PASSWORD
+
+RUN apt-get update
+RUN apt-get install python3-pip openssh-server sudo bash -y
+
+RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+
+EXPOSE 22
+
+RUN pip3 install yglu
+
+
 
 COPY config/config.yglu .
 
