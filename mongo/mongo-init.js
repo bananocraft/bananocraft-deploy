@@ -1,2 +1,2 @@
-use process.env.MONGO_INITDB_DATABASE
-db.createCollection(process.env.MONGO_INIT_COLLECTION)
+use BananoCraft;
+db.createCollection("users");
