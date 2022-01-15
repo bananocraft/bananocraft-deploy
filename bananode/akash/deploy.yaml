@@ -21,10 +21,9 @@ services:
           - global: true
           - service: bananonodemonitor
   bananonodemonitor:
-    image: xmconstantx/bananonodemonitor:v5
+    image: xmconstantx/bananonodemonitor:v6
     env:
       - NODE_ACCOUNT=ban_1dd7w8z7cx57e4u4h45rcr399zgpnfcsqi61ifbxcowoauox1i9sqosyd6wu
-      - NAME=flugel
     expose:
       - port: 80
         as: 80

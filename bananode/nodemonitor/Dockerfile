@@ -12,3 +12,4 @@ RUN rm -rf /var/www/html/*
 RUN git clone https://github.com/BananoTools/bananoNodeMonitor.git /var/www/html/.
 
 COPY config.php /var/www/html/modules/config.php
+COPY cmc_widget.php /var/www/html/modules/cmc_widget.php
