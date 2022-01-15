@@ -6,7 +6,7 @@ rm -rf /var/www/html/*
 git clone https://github.com/BananoTools/bananoNodeMonitor.git /var/www/html/.
 
 echo "== Adding config file"
-cp ./config.php /var/www/html/modules/config.php
+cp config.php /var/www/html/modules/config.php
 
 echo "all done ... node monitor running!"
 

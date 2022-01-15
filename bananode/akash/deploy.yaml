@@ -3,24 +3,28 @@ version: "2.0"
 
 services:
   bananonode:
-    image: xmconstantx/bananocraftnode:master
+    image: xmconstantx/bananonode:rpc
     expose:
       - port: 7071
         as: 7071
         to:
           - global: true
+          - service: bananonodemonitor
       - port: 7072
         as: 7072
         to:
           - global: true
+          - service: bananonodemonitor
       - port: 7074
         as: 7074
         to:
           - global: true
+          - service: bananonodemonitor
   bananonodemonitor:
-    image: xmconstantx/bananonodemonitor:akashmaster
+    image: xmconstantx/bananonodemonitor:v5
     env:
       - NODE_ACCOUNT=ban_1dd7w8z7cx57e4u4h45rcr399zgpnfcsqi61ifbxcowoauox1i9sqosyd6wu
+      - NAME=flugel
     expose:
       - port: 80
         as: 80

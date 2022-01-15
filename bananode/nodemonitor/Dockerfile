@@ -7,10 +7,8 @@ RUN apt-get install git -y
 
 RUN mkdir /opt/bananoNodeMonitor
 
-RUN git -C /opt/bananoNodeMonitor pull || git clone https://github.com/BananoTools/bananoNodeMonitor.git /opt/bananoNodeMonitor
+RUN rm -rf /var/www/html/*
 
-COPY config.php .
+RUN git clone https://github.com/BananoTools/bananoNodeMonitor.git /var/www/html/.
 
-COPY --chmod=755 entrypoint.sh .
-
-ENTRYPOINT ["./entrypoint.sh"]
+COPY config.php /var/www/html/modules/config.php
