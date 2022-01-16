@@ -12,15 +12,9 @@ ENV SSH_USER=$SSH_USER
 ENV SSH_PASSWORD=$SSH_PASSWORD
 
 RUN apt-get update
-RUN apt-get install python3-pip openssh-server sudo bash -y
-
-RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-
-EXPOSE 22
+RUN apt-get install python3-pip bash -y
 
 RUN pip3 install yglu
-
-
 
 COPY config/config.yglu .
 

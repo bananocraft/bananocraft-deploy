@@ -3,11 +3,10 @@ version: "2.0"
 
 services:
   mongo:
-    image: xmconstantx/bananocraftmongo:master
+    image: xmconstantx/bananocraftmongo:inituser
     env:
       - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
       - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
-      - MONGO_INITDB_DATABASE=BananoCraft
     expose:
       - port: 27017
         protocol: tcp

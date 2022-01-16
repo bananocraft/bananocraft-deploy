@@ -1,3 +1,6 @@
-FROM mongo:3.2
+FROM mongo:3.4
 
-COPY mongo-init.js /docker-entrypoint-initdb.d/
+ENV MONGO_INITDB_USERNAME=$MONGO_INITDB_USERNAME
+ENV MONGO_INITDB_PASSWORD=$MONGO_INITDB_PASSWORD
+
+COPY init-mongo.js /docker-entrypoint-initdb.d/init-mongo.js
