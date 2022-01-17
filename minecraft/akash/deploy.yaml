@@ -3,29 +3,29 @@ version: "2.0"
 
 services:
   web:
-    image: xmconstantx/bananocraftserver
+    image: xmconstantx/bananocraftserver:01162022
     env:
+      - SSH_PASSWORD=adsfsadf
       - EULA=TRUE
       - PVP=TRUE
-      - MOTD="HardCore Survival Bananocraft Akash POC"
+      - MOTD="Hard Mode Survival Bananocraft Akash POC"
       - MODE=survival
       - ENABLE_COMMAND_BLOCK=true
       - ENABLE_RCON=false
-      - SPAWN_PROTECTION=34
-      - HARDCORE=true
+      - SPAWN_PROTECTION=1
+      - HARDCORE=false
       - MAX_PLAYERS=20
-      - OPS=asdfdsaf,asdfdsaf
-      - DIFFICULTY=normal
-      - SERVER_NAME=HardcoreSurvivalBananocraftAkash
+      - OPS=k1rby,mconstant
+      - DIFFICULTY=hard
+      - SERVER_NAME=SurvivalBananocraftAkash
       - MEMORY=4G
-      - TYPE=PURPUR
-      - BANANODE_IP=asdfadsf
-      - BANANOCRAFT_WALLET_SEED=asdfadsfadsf
-      - WALLET_ID=asdfdsafadsf
-      - MASTER_WALLET=asdfadsfadsf
-      - MONGO_INITDB_ROOT_USERNAME=asdfdsafa
-      - MONGO_INITDB_ROOT_PASSWORD=asdfdsafasdf
-      - MONGO_URI=mongodb://asfdsaf:asdfsdaf@asdfdsafdsafadsf:32672
+      - TYPE=PAPER
+      - BANANODE_IP=asdfasdfasdfsadfadsf
+      - BANANOCRAFT_WALLET_SEED=asdfasdfasdfasdfsadfsadf
+      - MASTER_WALLET=asdfasdfdsafsadf
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=asdfasdfasdf
+      - MONGO_URI=mongodb://root:asdfasdf@asdfasdfasdfdsafsdafadsf
     expose:
       - port: 25565
         protocol: tcp
@@ -40,7 +40,7 @@ profiles:
         memory:
           size: 6Gi
         storage:
-          size: 5Gi
+          size: 50Gi
   placement:
     westcoast:
       attributes:
