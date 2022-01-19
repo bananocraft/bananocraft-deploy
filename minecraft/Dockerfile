@@ -18,6 +18,7 @@ ENV RCLONE_CONFIG_BANANOCRAFTBACKUPS_ACCESS_GRANT=$RCLONE_CONFIG_BANANOCRAFTBACK
 ENV RESTIC_PASSWORD=$RESTIC_PASSWORD
 ENV CHECK_BACKUP=false
 ENV RESTORE_FROM_BACKUP=false
+ENV RESTORE_VERSION=latest
 
 RUN apt-get update
 RUN apt-get install curl unzip python3-pip bash restic rclone -y
@@ -59,7 +60,7 @@ COPY --chmod=755 restore.sh .
 COPY --chmod=755 check_backup.sh .
 COPY --chmod=755 backup.sh .
 
-COPY BananoEconomy-1.0-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
+COPY BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
 COPY Vault.jar plugins/Vault.jar
 
 COPY --chmod=755 entrypoint.sh .

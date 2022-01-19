@@ -1,4 +1,7 @@
 #!/bin/bash
+
+rm /data/.restored || true
+
 /bin/echo "Starting backup..."
 
 /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "say Backing up server."
