@@ -13,7 +13,7 @@ if [ "CHECK_BACKUP" = true ] ; then
   source /data/check_backup.sh
 fi
 
-if [ ! -f /data/.restored] ; then
+if [ ! -f /data/.restored ] ; then
   if [ "$RESTORE_FROM_BACKUP" = true ] ; then
     source /data/restore.sh
   fi
