@@ -7,4 +7,7 @@ mkdir -p plugins/BananoEconomy
 
 cp config.yml ./plugins/BananoEconomy/config.yml
 
+service cron start
+
+
 source /start
