@@ -3,7 +3,7 @@
 echo "seeing if any previous snapshots of this server are stored and checking their validity"
 yes $RESTIC_PASSWORD | restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup check
 
-retVal=$?
+retVal=${PIPESTATUS[1]}
 if [ $retVal -ne 0 ]; then
     echo "No verified backup, not restoring"
 else
