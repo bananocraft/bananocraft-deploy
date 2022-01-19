@@ -9,5 +9,6 @@ cp config.yml ./plugins/BananoEconomy/config.yml
 
 service cron start
 
+source /data/restore.sh
 
 source /start

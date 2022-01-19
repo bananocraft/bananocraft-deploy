@@ -13,9 +13,12 @@ ENV MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
 ENV MONGO_URI=$MONGO_URI
 ENV SSH_USER=$SSH_USER
 ENV SSH_PASSWORD=$SSH_PASSWORD
+ENV RCLONE_CONFIG_BANANOCRAFTBACKUPS_TYPE=storj
+ENV RCLONE_CONFIG_BANANOCRAFTBACKUPS_ACCESS_GRANT=$RCLONE_CONFIG_BANANOCRAFTBACKUPS_ACCESS_GRANT
+ENV RESTIC_PASSWORD=$RESTIC_PASSWORD
 
 RUN apt-get update
-RUN apt-get install curl unzip python3-pip bash -y
+RUN apt-get install curl unzip python3-pip bash restic rclone -y
 
 RUN pip3 install yglu
 
@@ -46,8 +49,11 @@ RUN touch /var/log/cron.log
 
 COPY config/config.yglu .
 
-COPY rclone.conf .
+RUN mkdir -p /root/.config/rclone
 
+COPY rclone.conf /root/.config/rclone/rclone.conf
+
+COPY --chmod=755 restore.sh .
 COPY --chmod=755 backup.sh .
 
 COPY BananoEconomy-1.0-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
