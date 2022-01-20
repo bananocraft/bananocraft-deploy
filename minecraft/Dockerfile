@@ -19,6 +19,7 @@ ENV RESTIC_PASSWORD=$RESTIC_PASSWORD
 ENV CHECK_BACKUP=false
 ENV RESTORE_FROM_BACKUP=false
 ENV RESTORE_VERSION=latest
+ENV BACKUP_SCHEDULE="*/2 * * * *"
 
 RUN apt-get update
 RUN apt-get install curl unzip python3-pip bash restic rclone -y
@@ -28,27 +29,6 @@ RUN pip3 install yglu
 RUN mkdir /backups
 
 RUN git clone https://github.com/Tiiffi/mcrcon.git && cd mcrcon && make && make install
-
-RUN curl -L https://github.com/storj/storj/releases/latest/download/uplink_linux_amd64.zip -o uplink_linux_amd64.zip
-RUN unzip -o uplink_linux_amd64.zip
-RUN chmod 755 uplink
-RUN sudo mv uplink /usr/local/bin/uplink
-
-COPY accessgrant.txt .
-RUN uplink import accessgrant.txt
-
-
-# Copy hello-cron file to the cron.d directory
-COPY backup-cron /etc/cron.d/backup-cron
-
-# Give execution rights on the cron job
-RUN chmod 0644 /etc/cron.d/backup-cron
-
-# Apply cron job
-RUN crontab /etc/cron.d/backup-cron
-
-# Create the log file to be able to run tail
-RUN touch /var/log/cron.log
 
 COPY config/config.yglu .
 

@@ -7,9 +7,7 @@ mkdir -p plugins/BananoEconomy
 
 cp config.yml ./plugins/BananoEconomy/config.yml
 
-service cron start
-
-if [ "CHECK_BACKUP" = true ] ; then
+if [ "$CHECK_BACKUP" = true ] ; then
   source /data/check_backup.sh
 fi
 
@@ -18,5 +16,7 @@ if [ ! -f /data/.restored ] ; then
     source /data/restore.sh
   fi
 fi
+
+source /data/backup.sh &
 
 source /start
