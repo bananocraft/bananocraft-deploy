@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-    sleep $((2 * 60))
+    sleep $(($BACKUP_MINUTE_INTERVAL * 60))
     rm /data/.restored || true
 
     /bin/echo "Starting backup..."

@@ -19,7 +19,7 @@ ENV RESTIC_PASSWORD=$RESTIC_PASSWORD
 ENV CHECK_BACKUP=false
 ENV RESTORE_FROM_BACKUP=false
 ENV RESTORE_VERSION=latest
-ENV BACKUP_SCHEDULE="*/2 * * * *"
+ENV BACKUP_MINUTE_INTERVAL=60
 
 RUN apt-get update
 RUN apt-get install curl unzip python3-pip bash restic rclone -y
