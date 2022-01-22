@@ -1,5 +1,5 @@
 IP: !? $env["BANANODE_IP"]
-walletSeed: !? $env["BANANOCRAFT_WALLET_SEED"]
+walletSeed: !? $env["WORLD_ID"]
 walletID: !? $env["WALLET_ID"]
 masterWallet: !? $env["MASTER_WALLET"]
 mongoURI: !? $env["MONGO_URI"]
