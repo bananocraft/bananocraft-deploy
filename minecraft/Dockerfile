@@ -22,7 +22,7 @@ ENV RESTORE_VERSION=latest
 ENV BACKUP_MINUTE_INTERVAL=60
 
 RUN apt-get update
-RUN apt-get install curl unzip python3-pip bash restic rclone -y
+RUN apt-get install sudo curl zip unzip python3-pip bash restic sudo rclone -y
 
 RUN pip3 install yglu
 
@@ -41,6 +41,7 @@ COPY --chmod=755 check_backup.sh .
 COPY --chmod=755 backup.sh .
 
 COPY BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
+COPY Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY Vault.jar plugins/Vault.jar
 
 COPY --chmod=755 entrypoint.sh .
