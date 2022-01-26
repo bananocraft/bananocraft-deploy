@@ -20,6 +20,7 @@ ENV CHECK_BACKUP=false
 ENV RESTORE_FROM_BACKUP=false
 ENV RESTORE_VERSION=latest
 ENV BACKUP_MINUTE_INTERVAL=60
+ENV DISCORD_WEBHOOK_URL=$DISCORD_WEBHOOK_URL
 
 RUN apt-get update
 RUN apt-get install sudo curl zip unzip python3-pip bash restic sudo rclone -y
