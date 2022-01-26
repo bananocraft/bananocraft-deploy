@@ -36,6 +36,9 @@ RUN mkdir -p /root/.config/rclone
 
 COPY rclone.conf /root/.config/rclone/rclone.conf
 
+RUN mkdir /scripts
+COPY config/config.yglu /scripts
+
 COPY --chmod=755 restore.sh .
 COPY --chmod=755 check_backup.sh .
 COPY --chmod=755 backup.sh .

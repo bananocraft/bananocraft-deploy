@@ -7,6 +7,7 @@ mkdir /restore
 RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup restore $RESTORE_VERSION --target /restorefiles
 sudo chown -R 1000:1000 /restorefiles
 sudo chown -R 1000:1000 /data
+yglu /scripts/config.yglu > /restorefiles/plugins/BananoEconomy/config.yml
 zip -r /restore/restore.zip /restorefiles
 rm -rf /restorefiles
 export GENERIC_PACK=/restore/restore.zip
