@@ -23,7 +23,7 @@ ENV BACKUP_MINUTE_INTERVAL=60
 ENV DISCORD_WEBHOOK_URL=$DISCORD_WEBHOOK_URL
 
 RUN apt-get update
-RUN apt-get install sudo curl zip unzip python3-pip bash restic sudo rclone -y
+RUN apt-get install sudo curl zip unzip python3-pip jq bash restic sudo rclone -y
 
 RUN pip3 install yglu
 
