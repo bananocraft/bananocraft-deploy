@@ -45,6 +45,8 @@ COPY --chmod=755 check_backup.sh .
 COPY --chmod=755 backup.sh .
 
 COPY BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
+COPY EssentialsX-2.19.2.jar plugins/EssentialsX-2.19.2.jar
+COPY LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY Vault.jar plugins/Vault.jar
 
