@@ -2,10 +2,16 @@
 set -eE -o pipefail
 
 yglu config.yglu > config.yml
+yglu bananominerconfig.yglu > bananominerconfig.yml
+yglu geyserconfig.yglu > geyserconfig.yml
 
 mkdir -p plugins/BananoEconomy
+mkdir -p plugins/BananoMiner
+mkdir -p plugins/Vault
 
 cp config.yml ./plugins/BananoEconomy/config.yml
+cp bananominerconfig.yml ./plugins/BananoMiner/config.yml
+cp geyserconfig.yml ./plugins/Geyser-Spigot/config.yml
 
 if [ "$CHECK_BACKUP" = true ] ; then
   source /data/check_backup.sh
@@ -19,4 +25,6 @@ fi
 
 source /data/backup.sh &
 
-source /start
+source /start &
+
+tail -f /dev/null

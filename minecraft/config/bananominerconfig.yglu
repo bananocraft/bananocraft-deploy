@@ -1,0 +1,56 @@
+mongoURI: !? $env["MONGO_URI"]
+
+EnableBananoMiner: true
+BasePrize: 0.19
+Debug: true
+EnableRandomPrizes: true
+MaxDailyEarn: 10.0
+RestrictToPickaxe: true
+
+RANDOM_MINE_PRIZE:
+  Chance: 0.001
+  MinimumMultiplier: 0.01
+  MaximumMultiplier: 1.0
+
+# Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
+# and the reward multiplier below.
+DIAMOND_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.8
+  MaximumMultiplier: 3.0
+EMERALD_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.4
+  MaximumMultiplier: 2.5
+REDSTONE_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.2
+  MaximumMultiplier: 1.7
+GOLD_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.4
+  MaximumMultiplier: 2.2
+LAPIS_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.25
+  MaximumMultiplier: 2.0
+DEEPSLATE_DIAMOND_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.8
+  MaximumMultiplier: 3.0
+DEEPSLATE_EMERALD_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.4
+  MaximumMultiplier: 2.5
+DEEPSLATE_REDSTONE_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.2
+  MaximumMultiplier: 1.7
+DEEPSLATE_GOLD_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.4
+  MaximumMultiplier: 2.2
+DEEPSLATE_LAPIS_ORE:
+  Chance: 5.0
+  MinimumMultiplier: 0.25
+  MaximumMultiplier: 2.0
