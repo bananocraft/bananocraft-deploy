@@ -8,6 +8,7 @@ yglu geyserconfig.yglu > geyserconfig.yml
 mkdir -p plugins/BananoEconomy
 mkdir -p plugins/BananoMiner
 mkdir -p plugins/Vault
+mkdir -p plugins/Geyser-Spigot
 
 cp config.yml ./plugins/BananoEconomy/config.yml
 cp bananominerconfig.yml ./plugins/BananoMiner/config.yml
