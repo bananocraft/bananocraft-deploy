@@ -18,6 +18,8 @@ CTRL+C
 
 CTRL+R
 
+docker build -t akashcli .
+
 docker run -e AKT_WALLET_SEED="<yourseed>" -e TEMP_WALLET_PASSWORD=<yourtemppass> --user root -it akashcli bash
 
 akash tx cert generate client --from $AKASH_KEY_NAME
