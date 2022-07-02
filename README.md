@@ -11,26 +11,37 @@
 
 
 Open Powershell
+
 Cd akashdeploy
+
 CTRL+C
+
 CTRL+R
 
+docker build -t akashcli .
+
 docker run -e AKT_WALLET_SEED="<yourseed>" -e TEMP_WALLET_PASSWORD=<yourtemppass> --user root -it akashcli bash
+
 akash tx cert generate client --from $AKASH_KEY_NAME
+
 akash tx cert publish client --from $AKASH_KEY_NAME --gas-prices="0.025uakt" --gas="auto" --gas-adjustment=1.15
 
 Not working? Run the next until forbole
+
 export AKASH_NODE="$(curl -s "$AKASH_NET/rpc-nodes.txt" | shuf -n 1)" && echo $AKASH_NODE
 
 akash provider lease-shell --tty --stdin --from $AKASH_KEY_NAME --dseq 5178886 --provider akash1vky0uh4wayh9npd74uqesglpaxwymynnspf6a4 -- web bash
 
 Grab provider and dseq from akashlytics->raw data
+
 akash provider lease-shell --tty --stdin --from $AKASH_KEY_NAME --dseq 5178886 --provider akash1vky0uh4wayh9npd74uqesglpaxwymynnspf6a4 -- web bash
 
 If tmux not installed:
+
 apt install tmux -y
 
 Then open tmux
+
 tmux
 
 
