@@ -48,17 +48,23 @@ COPY --chmod=755 restore.sh .
 COPY --chmod=755 check_backup.sh .
 COPY --chmod=755 backup.sh .
 
+RUN rm -f plugins/BananoEconomy-*.jar
 RUN rm -f plugins/bananominer-*.jar
 RUN rm -f plugins/EssentialsX-*.jar
+RUN rm -f plugins/LuckPerms-*.jar
+RUN rm -f plugins/Geyser-*.jar
+RUN rm -f plugins/ViaVersion-*.jar
+RUN rm -f plugins/PetShop-*.jar
 
-#COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
-COPY deployplugins/BananoEconomy-1.1.1-SNAPSHOT.jar plugins/BananoEconomy-1.0-SNAPSHOT.jar
+#COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.1.0-SNAPSHOT.jar
+COPY deployplugins/BananoEconomy-1.1.1-SNAPSHOT.jar plugins/BananoEconomy-1.1.1-SNAPSHOT.jar
 COPY deployplugins/EssentialsX-2.19.4.jar plugins/EssentialsX-2.19.4.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/bananominer-1.0.14.jar plugins/bananominer-1.0.14.jar
 COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
+COPY deployplugins/PetShop-1.3.1.jar plugins/PetShop-1.3.1.jar
 
 COPY --chmod=755 entrypoint.sh .
 
