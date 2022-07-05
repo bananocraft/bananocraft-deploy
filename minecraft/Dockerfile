@@ -57,7 +57,7 @@ RUN rm -f plugins/ViaVersion-*.jar
 RUN rm -f plugins/PetShop-*.jar
 
 #COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.1.0-SNAPSHOT.jar
-COPY deployplugins/BananoEconomy-1.1.1-SNAPSHOT.jar plugins/BananoEconomy-1.1.1-SNAPSHOT.jar
+COPY deployplugins/BananoEconomy-1.1.2-SNAPSHOT.jar plugins/BananoEconomy-1.1.2-SNAPSHOT.jar
 COPY deployplugins/EssentialsX-2.19.4.jar plugins/EssentialsX-2.19.4.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
