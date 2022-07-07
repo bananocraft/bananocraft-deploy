@@ -4,11 +4,11 @@ EnableBananoMiner: true
 BasePrize: 0.19
 Debug: true
 EnableRandomPrizes: true
-MaxDailyEarn: 10.0
+MaxDailyEarn: 19.0
 RestrictToPickaxe: true
 
 RANDOM_MINE_PRIZE:
-  Chance: 0.001
+  Chance: 0.01
   MinimumMultiplier: 0.01
   MaximumMultiplier: 1.0
 

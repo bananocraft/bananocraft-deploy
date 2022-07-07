@@ -1,0 +1,16 @@
+configVersion: 1
+
+settings:
+  # Item used to put mobs up for sale
+  saleMaterial: "PAPER"
+  
+  # Language settings
+  saleTag: "&f$type &aFor Sale&f: &f$price"
+  notEnoughMoney: "&fYou don't have enough for this transaction!"
+  putForSale: "&6$type &fput up for sale!"
+  removeForSale: "&fRemoved &6$type &ffrom sale!"
+  soldOldOwner: "&6$player &fhas bought your &6$type &ffor &6$price&f!"
+  soldNewOwner: "&fYou bought a &6$type &ffor &6$price&f!"
+  invalidName: "&fName invalid, It must be a Integer or Double!"
+  paymentError: "An error occurred processing the payment: "
+  paymentErrorContactOP: "An error occurred with a pet purchase transaction. Ownership transfer has not been completed. Please contact an OP: "

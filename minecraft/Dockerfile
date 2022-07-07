@@ -34,6 +34,7 @@ RUN git clone https://github.com/Tiiffi/mcrcon.git && cd mcrcon && make && make 
 COPY config/config.yglu .
 COPY config/bananominerconfig.yglu .
 COPY config/geyserconfig.yglu .
+COPY config/petshopconfig.yglu .
 
 RUN mkdir -p /root/.config/rclone
 
@@ -43,6 +44,7 @@ RUN mkdir /scripts
 COPY config/config.yglu /scripts
 COPY config/bananominerconfig.yglu /scripts
 COPY config/geyserconfig.yglu /scripts
+COPY config/petshopconfig.yglu /scripts
 
 COPY --chmod=755 restore.sh .
 COPY --chmod=755 check_backup.sh .
@@ -64,7 +66,7 @@ COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/bananominer-1.0.14.jar plugins/bananominer-1.0.14.jar
 COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
-COPY deployplugins/PetShop-1.3.1.jar plugins/PetShop-1.3.1.jar
+COPY deployplugins/PetShop-1.4.jar plugins/PetShop-1.4.jar
 
 COPY --chmod=755 entrypoint.sh .
 
