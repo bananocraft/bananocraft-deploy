@@ -33,6 +33,7 @@ RUN git clone https://github.com/Tiiffi/mcrcon.git && cd mcrcon && make && make 
 
 COPY config/config.yglu .
 COPY config/bananominerconfig.yglu .
+COPY config/bananosuiteconfig.yglu .
 COPY config/geyserconfig.yglu .
 COPY config/petshopconfig.yglu .
 
@@ -43,6 +44,7 @@ COPY rclone.conf /root/.config/rclone/rclone.conf
 RUN mkdir /scripts
 COPY config/config.yglu /scripts
 COPY config/bananominerconfig.yglu /scripts
+COPY config/bananosuiteconfig.yglu /scripts
 COPY config/geyserconfig.yglu /scripts
 COPY config/petshopconfig.yglu /scripts
 
@@ -52,6 +54,7 @@ COPY --chmod=755 backup.sh .
 
 RUN rm -f plugins/BananoEconomy-*.jar
 RUN rm -f plugins/bananominer-*.jar
+RUN rm -f plugins/bananosuite-*.jar
 RUN rm -f plugins/EssentialsX-*.jar
 RUN rm -f plugins/LuckPerms-*.jar
 RUN rm -f plugins/Geyser-*.jar
@@ -67,6 +70,7 @@ COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/bananominer-1.0.14.jar plugins/bananominer-1.0.14.jar
 COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.jar plugins/PetShop-1.4.jar
+COPY deployplugins/bananosuite-1.0.0-SNAPSHOT.jar plugins/bananosuite-1.0.0-SNAPSHOT.jar
 
 COPY --chmod=755 entrypoint.sh .
 

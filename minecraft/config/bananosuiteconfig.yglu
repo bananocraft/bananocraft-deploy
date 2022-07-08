@@ -1,0 +1,178 @@
+mongoURI: mongodb+srv://admin:8%5bnuR$Mr=!3%5bUcet@cluster0.vny2p.mongodb.net/?retryWrites=true&w=majority
+
+EnableBananoSuite: true
+
+# Home Command Configuration
+RestrictHomeToOverworld: true
+
+# Spawn Teleport Configuration
+FreeSpawnTeleport: false
+TeleportBasePremium: 1.9
+TeleportMaximumPremium: 690
+TeleportGrowthRate: 0.1
+
+# Death Insurance Configuration
+EnableDeathInsurance: true
+DeathInsuranceBasePremium: 6.9
+DeathInsuranceMaximumPremium: 690
+DeathInsuranceGrowthRate: 0.19
+
+#Donation Command Configuration
+DonationGiftFireworks: true
+DonationRandomGift: true
+DonationClassifications:
+  LOW:
+    Threshold: 1
+  MEDIUM:
+    Threshold: 19
+  HIGH:
+    Threshold: 69
+  ULTIMATE:
+    Threshold: 690
+
+DonationPrizes:
+  YELLOW_DYE:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  YELLOW_WOOL:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 2
+  DANDELION:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 2
+  SAND:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  SANDSTONE:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  YELLOW_STAINED_GLASS_PANE:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  YELLOW_BANNER:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  YELLOW_STAINED_GLASS:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  YELLOW_BED:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  YELLOW_CARPET:
+    Classification: LOW
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  YELLOW_CONCRETE:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 5
+  YELLOW_CONCRETE_POWDER:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 5
+  YELLOW_GLAZED_TERRACOTTA:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  YELLOW_TERRACOTTA:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  GOLD_ORE:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  GOLD_NUGGET:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 5
+  GOLDEN_CARROT:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 5
+  HONEY_BOTTLE:
+    Classification: MEDIUM
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  GOLDEN_APPLE:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  GOLDEN_AXE:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  GOLDEN_CHESTPLATE:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  GOLDEN_HOE:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  GOLDEN_PICKAXE:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  GOLD_INGOT:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 3
+  GOLDEN_SHOVEL:
+    Classification: HIGH
+    Weighting: 1
+    Minimum: 1
+    Maximum: 1
+  BLAZE_ROD:
+    Classification: HIGH
+    Weighting: 3
+    Minimum: 1
+    Maximum: 2
+  BLAZE_POWDER:
+    Classification: HIGH
+    Weighting: 3
+    Minimum: 1
+    Maximum: 3
+  YELLOW_SHULKER_BOX:
+    Classification: ULTIMATE
+    Weighting: 4
+    Minimum: 1
+    Maximum: 1
+  SPONGE:
+    Classification: ULTIMATE
+    Weighting: 4
+    Minimum: 1
+    Maximum: 1
