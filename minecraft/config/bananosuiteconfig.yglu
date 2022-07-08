@@ -1,4 +1,4 @@
-mongoURI: mongodb+srv://admin:8%5bnuR$Mr=!3%5bUcet@cluster0.vny2p.mongodb.net/?retryWrites=true&w=majority
+mongoURI: !? $env["MONGO_URI"]
 
 EnableBananoSuite: true
 
