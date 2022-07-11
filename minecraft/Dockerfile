@@ -70,7 +70,7 @@ COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/bananominer-1.0.14.jar plugins/bananominer-1.0.14.jar
 COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
-COPY deployplugins/bananosuite-1.0.0-SNAPSHOT.jar plugins/bananosuite-1.0.0-SNAPSHOT.jar
+COPY deployplugins/bananosuite-1.0.1-SNAPSHOT.jar plugins/bananosuite-1.0.1-SNAPSHOT.jar
 
 COPY --chmod=755 entrypoint.sh .
 

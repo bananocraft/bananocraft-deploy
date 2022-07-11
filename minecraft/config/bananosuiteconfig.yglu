@@ -19,6 +19,7 @@ DeathInsuranceGrowthRate: 0.19
 
 #Donation Command Configuration
 DonationGiftFireworks: true
+DonationGiftFireworksThreshold: 6.9
 DonationRandomGift: true
 DonationClassifications:
   LOW:
