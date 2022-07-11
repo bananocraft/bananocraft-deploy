@@ -14,3 +14,4 @@ settings:
   invalidName: "&fName invalid, It must be a Integer or Double!"
   paymentError: "An error occurred processing the payment: "
   paymentErrorContactOP: "An error occurred with a pet purchase transaction. Ownership transfer has not been completed. Please contact an OP: "
+  cannotIdentifyRecipient: "Recipient player could not be retrieved."
