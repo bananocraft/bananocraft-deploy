@@ -27,11 +27,6 @@ rm -f /restorefiles/data/plugins/*.jar
 #rm -f /restorefiles/data/plugins/Geyser-Spigot.jar
 #rm -f /restorefiles/data/plugins/CoreProtect/database.db
 
-# Remove the manifest/server properties from the backup files to be restored. This means we can restore from another server's backup without
-# any issues when it comes to the new server's backup getting confused as to which server it is.
-#rm -f /restorefiles/data/manifest.txt
-#rm -f /restorefiles/data/server.properties
-
 sudo chown -R 1000:1000 /restorefiles
 sudo chown -R 1000:1000 /data
 zip -r /restore/restore.zip /restorefiles
