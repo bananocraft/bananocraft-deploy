@@ -10,6 +10,7 @@ FreeSpawnTeleport: false
 TeleportBasePremium: 1.9
 TeleportMaximumPremium: 1000
 TeleportGrowthRate: 0.1
+MinimumTeleportDistance: 16
 
 # Death Insurance Configuration
 EnableDeathInsurance: true
