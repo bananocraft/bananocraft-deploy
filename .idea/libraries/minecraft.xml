@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="minecraft">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/minecraft/Geyser-Spigot.jar!/" />
+      <root url="jar://$PROJECT_DIR$/minecraft/BananoEconomy-1.1.0-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/minecraft/Vault.jar!/" />
+      <root url="jar://$PROJECT_DIR$/minecraft/LuckPerms-Bukkit-5.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/minecraft/EssentialsX-2.19.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

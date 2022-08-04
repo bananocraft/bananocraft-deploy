@@ -10,6 +10,7 @@ mkdir /restorefiles/data/plugins
 mkdir /restorefiles/data/plugins/BananoEconomy
 mkdir /restorefiles/data/plugins/BananoMiner
 mkdir /restorefiles/data/plugins/BananoSuite
+mkdir /restorefiles/data/plugins/BananoSuite/frames
 mkdir /restorefiles/data/plugins/PetShop
 mkdir /restorefiles/data/plugins/Geyser-Spigot
 RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup restore $RESTORE_VERSION --target /restorefiles

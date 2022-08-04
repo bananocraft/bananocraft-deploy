@@ -23,11 +23,15 @@ monKeyImageSourceURL: https://monkey.banano.cc/api/v1/monkey/{address}?format=pn
 
 ImageDirectory: "images"
 QRDirectory: "qrcodes"
+FramesDirectory: "frames"
 
 ApplyFrame: "frame.png"
 AllowCloning: false
 MonKeyPrice: 100
 QRPrice: 250
+AvailableFrames:
+  Fancy:
+    Image: "frame.png"
 
 #Donation Command Configuration
 DonationGiftFireworks: true

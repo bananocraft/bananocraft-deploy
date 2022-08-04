@@ -75,6 +75,9 @@ COPY deployplugins/bananominer-1.0.14.jar plugins/bananominer-1.0.14.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/bananosuite-1.0.4-SNAPSHOT.jar plugins/bananosuite-1.0.4-SNAPSHOT.jar
 
+# Copy BananoSuite frame images
+COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png
+
 COPY --chmod=755 entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]
