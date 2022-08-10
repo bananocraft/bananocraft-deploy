@@ -2,6 +2,9 @@ mongoURI: !? $env["MONGO_URI"]
 
 EnableBananoSuite: true
 
+# Rain Command Configuration
+MinimumRainPerPlayer: 0.1
+
 # Home Command Configuration
 RestrictHomeToOverworld: true
 
