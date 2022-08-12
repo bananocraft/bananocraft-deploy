@@ -6,6 +6,7 @@ Debug: true
 EnableRandomPrizes: true
 MaxDailyEarn: 19.0
 RestrictToPickaxe: true
+LuckChance: 0.1
 
 RANDOM_MINE_PRIZE:
   Chance: 0.1
