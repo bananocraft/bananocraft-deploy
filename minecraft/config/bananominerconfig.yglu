@@ -15,43 +15,140 @@ RANDOM_MINE_PRIZE:
 
 # Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
 # and the reward multiplier below.
-DIAMOND_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.8
-  MaximumMultiplier: 3.0
-EMERALD_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.4
-  MaximumMultiplier: 2.5
-REDSTONE_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.2
-  MaximumMultiplier: 1.7
-GOLD_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.4
-  MaximumMultiplier: 2.2
-LAPIS_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.25
-  MaximumMultiplier: 2.0
-DEEPSLATE_DIAMOND_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.8
-  MaximumMultiplier: 3.0
-DEEPSLATE_EMERALD_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.4
-  MaximumMultiplier: 2.5
-DEEPSLATE_REDSTONE_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.2
-  MaximumMultiplier: 1.7
-DEEPSLATE_GOLD_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.4
-  MaximumMultiplier: 2.2
-DEEPSLATE_LAPIS_ORE:
-  Chance: 7.0
-  MinimumMultiplier: 0.25
-  MaximumMultiplier: 2.0
+MINER:
+  DIAMOND_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.8
+    MaximumMultiplier: 3.0
+  EMERALD_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.4
+    MaximumMultiplier: 2.5
+  REDSTONE_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.2
+    MaximumMultiplier: 1.7
+  GOLD_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.4
+    MaximumMultiplier: 2.2
+  LAPIS_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.25
+    MaximumMultiplier: 2.0
+  DEEPSLATE_DIAMOND_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.8
+    MaximumMultiplier: 3.0
+  DEEPSLATE_EMERALD_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.4
+    MaximumMultiplier: 2.5
+  DEEPSLATE_REDSTONE_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.2
+    MaximumMultiplier: 1.7
+  DEEPSLATE_GOLD_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.4
+    MaximumMultiplier: 2.2
+  DEEPSLATE_LAPIS_ORE:
+    Chance: 7.0
+    MinimumMultiplier: 0.25
+    MaximumMultiplier: 2.0
+
+FARMER:
+  POTATOES:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  BEETROOTS:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  NETHER_WART:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  WHEAT:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  MELON:
+    Chance: 2
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  PUMPKIN:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  SUGAR_CANE:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  BAMBOO:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  CARROTS:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  CACTUS:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  CHORUS_PLANT:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  COCOA:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  KELP_PLANT:
+    Chance: 0.1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+
+CHOPPER:
+  ACACIA_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  BIRCH_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  DARK_OAK_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  JUNGLE_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  OAK_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  SPRUCE_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  MANGROVE_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  CHORUS_PLANT:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  CRIMSON_STEM:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  WARPED_STEM:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
