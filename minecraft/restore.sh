@@ -23,10 +23,7 @@ yglu /scripts/bananosuiteconfig.yglu > /restorefiles/data/plugins/BananoSuite/co
 
 # Remove any old plugins that we don't include in the deployment any more. The ones we want will be redeployed as part of the server deployment.
 rm -f /restorefiles/data/plugins/*.jar
-#rm -f /restorefiles/data/plugins/bananominer-*.jar
-#rm -f /restorefiles/data/plugins/EssentialsX-*.jar
-#rm -f /restorefiles/data/plugins/Geyser-Spigot.jar
-#rm -f /restorefiles/data/plugins/CoreProtect/database.db
+rm -f /restorefiles/data/plugins/CoreProtect/database.db
 
 sudo chown -R 1000:1000 /restorefiles
 sudo chown -R 1000:1000 /data
