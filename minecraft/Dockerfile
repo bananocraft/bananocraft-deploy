@@ -39,6 +39,7 @@ COPY config/bananominerconfig.yglu .
 COPY config/bananosuiteconfig.yglu .
 COPY config/geyserconfig.yglu .
 COPY config/petshopconfig.yglu .
+COPY config/pvptoggle.yglu .
 
 RUN mkdir -p /root/.config/rclone
 
@@ -50,6 +51,7 @@ COPY config/bananominerconfig.yglu /scripts
 COPY config/bananosuiteconfig.yglu /scripts
 COPY config/geyserconfig.yglu /scripts
 COPY config/petshopconfig.yglu /scripts
+COPY config/pvptoggle.yglu /scripts
 
 COPY --chmod=755 restore.sh .
 COPY --chmod=755 check_backup.sh .
@@ -63,6 +65,7 @@ RUN rm -f plugins/LuckPerms-*.jar
 RUN rm -f plugins/Geyser-*.jar
 RUN rm -f plugins/ViaVersion-*.jar
 RUN rm -f plugins/PetShop-*.jar
+RUN rm -f plugins/PvPToggle-*.jar
 
 #COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.1.0-SNAPSHOT.jar
 COPY deployplugins/BananoEconomy-1.1.3-SNAPSHOT.jar plugins/BananoEconomy-1.1.3-SNAPSHOT.jar
@@ -74,6 +77,7 @@ COPY deployplugins/bananominer-1.0.17.jar plugins/bananominer-1.0.17.jar
 #COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 #COPY deployplugins/bananosuite-1.0.5-SNAPSHOT.jar plugins/bananosuite-1.0.5-SNAPSHOT.jar
+COPY deployplugins/PvPToggle-1.13-1.18a.jar plugins/PvPToggle-1.13-1.18a.jar
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png

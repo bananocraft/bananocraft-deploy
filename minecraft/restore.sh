@@ -13,6 +13,7 @@ mkdir /restorefiles/data/plugins/BananoSuite
 mkdir /restorefiles/data/plugins/BananoSuite/frames
 mkdir /restorefiles/data/plugins/PetShop
 mkdir /restorefiles/data/plugins/Geyser-Spigot
+mkdir /restorefiles/data/plugins/PvPToggle
 RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup restore $RESTORE_VERSION --target /restorefiles
 #RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/benis-backup restore $RESTORE_VERSION --target /restorefiles
 yglu /scripts/config.yglu > /restorefiles/data/plugins/BananoEconomy/config.yml
@@ -20,6 +21,7 @@ yglu /scripts/bananominerconfig.yglu > /restorefiles/data/plugins/BananoMiner/co
 yglu /scripts/geyserconfig.yglu > /restorefiles/data/plugins/Geyser-Spigot/config.yml
 yglu /scripts/petshopconfig.yglu > /restorefiles/data/plugins/PetShop/config.yml
 yglu /scripts/bananosuiteconfig.yglu > /restorefiles/data/plugins/BananoSuite/config.yml
+yglu /scripts/pvptoggle.yglu > /restorefiles/data/plugins/PvPToggle/config.yml
 
 # Remove any old plugins that we don't include in the deployment any more. The ones we want will be redeployed as part of the server deployment.
 rm -f /restorefiles/data/plugins/*.jar
