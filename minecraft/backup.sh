@@ -14,6 +14,7 @@ while true; do
   sleep 10
 
   echo "running restic"
+  #RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup unlock || EXIT_CODE=$?
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup init || true
   EXIT_CODE=0
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup backup /data || EXIT_CODE=$?
@@ -26,7 +27,8 @@ while true; do
     curl -H "Content-Type: application/json" -d "{\"username\": \"bananocraftbot\", \"content\": \"Backups on bananocraft server ${SERVER_NAME} need to be fixed\"}" $DISCORD_WEBHOOK_URL
     /bin/echo "Backups not complete!"
   fi
-  RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup forget --keep-hourly 48 --keep-daily 7 --keep-weekly 5 --keep-monthly 12 --keep-yearly 75 --prune
+
+  RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup forget --keep-hourly 24 --keep-daily 7 --keep-weekly 5 --keep-monthly 12 --keep-yearly 75 --prune
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup snapshots > available_snapshots.txt
   curl -F "payload_json={\"username\": \"bananocraftbot\", \"content\": \"available snapshots for $SERVER_NAME\"}" -F "file1=@available_snapshots.txt" $DISCORD_WEBHOOK_URL
   /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "check #backupbot channel on bananocraft.cc Discord for a log of available snapshots"
