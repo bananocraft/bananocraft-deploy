@@ -2,6 +2,12 @@ mongoURI: !? $env["MONGO_URI"]
 
 EnableBananoSuite: true
 
+EnableDonateCommand: true
+EnableMonKeyMaps: true
+EnablePvpToggle: true
+EnableRainCommand: true
+EnableTeleportCommands: true
+
 # Rain Command Configuration
 MinimumRainPerPlayer: 0.1
 
