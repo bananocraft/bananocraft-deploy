@@ -76,7 +76,7 @@ COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/bananominer-1.0.18.jar plugins/bananominer-1.0.18.jar
 #COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
-COPY deployplugins/bananosuite-1.0.8-SNAPSHOT.jar plugins/bananosuite-1.0.8-SNAPSHOT.jar
+COPY deployplugins/bananosuite-1.0.9-SNAPSHOT.jar plugins/bananosuite-1.0.9-SNAPSHOT.jar
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png

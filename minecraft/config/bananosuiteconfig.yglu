@@ -17,8 +17,8 @@ RestrictHomeToOverworld: true
 # Spawn Teleport Configuration
 FreeSpawnTeleport: false
 TeleportBasePremium: 1.9
-TeleportMaximumPremium: 1000
-TeleportGrowthRate: 0.1
+TeleportMaximumPremium: 250
+TeleportGrowthRate: 0.08
 MinimumTeleportDistance: 16
 
 # Death Insurance Configuration
@@ -36,8 +36,8 @@ FramesDirectory: "frames"
 
 ApplyFrame: "frame.png"
 AllowCloning: false
-MonKeyPrice: 100
-QRPrice: 250
+MonKeyPrice: 42
+QRPrice: 69
 AvailableFrames:
   Fancy:
     Image: "frame.png"
@@ -48,7 +48,7 @@ DonationGiftFireworksThreshold: 6.9
 DonationRandomGift: true
 DonationClassifications:
   LOW:
-    Threshold: 1
+    Threshold: 6.9
   MEDIUM:
     Threshold: 19
   HIGH:
