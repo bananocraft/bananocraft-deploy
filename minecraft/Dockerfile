@@ -8,9 +8,9 @@ ENV WORLD_ID=$WORLD_ID
 ENV WALLET_ID=$WALLET_ID
 ENV MASTER_WALLET=$MASTER_WALLET
 ENV BANANODE_IP=bananode
-ENV MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
-ENV MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
-ENV MONGO_URI=$MONGO_URI
+#ENV MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+#ENV MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+#ENV MONGO_URI=$MONGO_URI
 ENV SSH_USER=$SSH_USER
 ENV SSH_PASSWORD=$SSH_PASSWORD
 ENV RCLONE_CONFIG_BANANOCRAFTBACKUPS_TYPE=storj
@@ -21,6 +21,18 @@ ENV RESTORE_FROM_BACKUP=false
 ENV RESTORE_VERSION=latest
 ENV BACKUP_MINUTE_INTERVAL=60
 ENV DISCORD_WEBHOOK_URL=$DISCORD_WEBHOOK_URL
+
+ENV MYSQL_URI=$MYSQL_URI
+ENV MYSQL_PORT=$MYSQL_PORT
+
+ENV MYSQL_BANANOCRAFTUSER=$MYSQL_BANANOCRAFTUSER
+ENV MYSQL_BANANOCRAFTPASSWORD=$MYSQL_BANANOCRAFTPASSWORD
+
+ENV MYSQL_BANANOSUITEUSER=$MYSQL_BANANOSUITEUSER
+ENV MYSQL_BANANOSUITEPASSWORD=$MYSQL_BANANOSUITEPASSWORD
+
+ENV MYSQL_BANANOMINERUSER=$MYSQL_BANANOMINERUSER
+ENV MYSQL_BANANOMINERPASSWORD=$MYSQL_BANANOMINERPASSWORD
 
 RUN apt-get update
 RUN apt-get install sudo curl zip unzip python3-pip jq bash restic sudo rclone -y
@@ -68,15 +80,17 @@ RUN rm -f plugins/PetShop-*.jar
 RUN rm -f plugins/PvPToggle-*.jar
 
 #COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.1.0-SNAPSHOT.jar
-COPY deployplugins/BananoEconomy-1.1.3-SNAPSHOT.jar plugins/BananoEconomy-1.1.3-SNAPSHOT.jar
+#COPY deployplugins/BananoEconomy-1.1.3-SNAPSHOT.jar plugins/BananoEconomy-1.1.3-SNAPSHOT.jar
+COPY deployplugins/BananoEconomy-1.2.1-SNAPSHOT.jar plugins/BananoEconomy-1.2.1-SNAPSHOT.jar
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
-COPY deployplugins/bananominer-1.0.18.jar plugins/bananominer-1.0.18.jar
+#COPY deployplugins/bananominer-1.0.18.jar plugins/bananominer-1.0.18.jar
+COPY deployplugins/bananominer-1.0.19.jar plugins/bananominer-1.0.19.jar
 #COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
-COPY deployplugins/bananosuite-1.0.9-SNAPSHOT.jar plugins/bananosuite-1.0.9-SNAPSHOT.jar
+COPY deployplugins/bananosuite-1.0.10-SNAPSHOT.jar plugins/bananosuite-1.0.10-SNAPSHOT.jar
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png

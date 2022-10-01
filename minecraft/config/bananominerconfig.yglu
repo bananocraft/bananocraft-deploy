@@ -1,17 +1,30 @@
-mongoURI: !? $env["MONGO_URI"]
+
+mysqlServerName: !? $env["MYSQL_URI"]
+mysqlPort: !? $env["MYSQL_PORT"]
+mysqlDatabaseName: bananominer
+mysqlUsername: !? $env["MYSQL_BANANOMINERUSER"]
+mysqlPassword: !? $env["MYSQL_BANANOMINERPASSWORD"]
 
 EnableBananoMiner: true
 BasePrize: 0.19
 Debug: true
 EnableRandomPrizes: true
 MaxDailyEarn: 19.0
-RestrictToPickaxe: true
 LuckChance: 0.1
+
+# Real life days
+BannedBlockExpiryAfterXDays: 30
+
+# 20 ticks per second
+# 24000 ticks per minecraft day
+LastMoveTicks: 12000
+LastSleepTicks: 72000
 
 RANDOM_MINE_PRIZE:
   Chance: 0.1
   MinimumMultiplier: 0.01
   MaximumMultiplier: 1.0
+  SilkTouch: false
 
 # Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
 # and the reward multiplier below.
@@ -20,135 +33,344 @@ MINER:
     Chance: 7.0
     MinimumMultiplier: 0.8
     MaximumMultiplier: 3.0
+    SilkTouch: false
   EMERALD_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.4
     MaximumMultiplier: 2.5
+    SilkTouch: false
   REDSTONE_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.2
     MaximumMultiplier: 1.7
+    SilkTouch: false
   GOLD_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.4
     MaximumMultiplier: 2.2
+    SilkTouch: false
   LAPIS_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.25
     MaximumMultiplier: 2.0
+    SilkTouch: false
   DEEPSLATE_DIAMOND_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.8
     MaximumMultiplier: 3.0
+    SilkTouch: false
   DEEPSLATE_EMERALD_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.4
     MaximumMultiplier: 2.5
+    SilkTouch: false
   DEEPSLATE_REDSTONE_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.2
     MaximumMultiplier: 1.7
+    SilkTouch: false
   DEEPSLATE_GOLD_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.4
     MaximumMultiplier: 2.2
+    SilkTouch: false
   DEEPSLATE_LAPIS_ORE:
     Chance: 7.0
     MinimumMultiplier: 0.25
     MaximumMultiplier: 2.0
+    SilkTouch: false
 
 FARMER:
   POTATOES:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   BEETROOTS:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   NETHER_WART:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   WHEAT:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   MELON:
     Chance: 2
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: false
   PUMPKIN:
     Chance: 0.5
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   SUGAR_CANE:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   BAMBOO:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   CARROTS:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   CACTUS:
     Chance: 0.5
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   CHORUS_PLANT:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   COCOA:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   KELP_PLANT:
     Chance: 0.1
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
 
 CHOPPER:
   ACACIA_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   BIRCH_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   DARK_OAK_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   JUNGLE_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   OAK_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   SPRUCE_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   MANGROVE_LOG:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   CHORUS_PLANT:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   CRIMSON_STEM:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
   WARPED_STEM:
-    Chance: 1
+    Chance: 0.8
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.5
+    SilkTouch: true
+
+FISHER:
+  SALMON:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  COD:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  PUFFERFISH:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  TROPICAL_FISH:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  BOW:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  ENCHANTED_BOOK:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  FISHING_ROD:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  NAME_TAG:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  NAUTILUS_SHELL:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  SADDLE:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  LILY_PAD:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  BOWL:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  LEATHER:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  LEATHER_BOOTS:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  ROTTEN_FLESH:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  STICK:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  BONE:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  INK_SAC:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+  TRIPWIRE_HOOK:
+    Chance: 0.8
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+
+BREEDER:
+  ALLAY:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  AXOLOTL:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  BEE:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  CAT:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  CHICKEN:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  COW:
+    Chance: 0.2
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DONKEY:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  FOX:
+    Chance: 0.7
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  FROG:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOAT:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  HOGLIN:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  HORSE:
+    Chance: 0.7
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  LLAMA:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  MULE:
+    Chance: 0.7
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  MUSHROOM_COW:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  OCELOT:
+    Chance: 0.7
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  PANDA:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  PARROT:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  PIG:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  RABBIT:
+    Chance: 0.7
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  SHEEP:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  STRIDER:
+    Chance: 0.7
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  TURTLE:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  WOLF:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6

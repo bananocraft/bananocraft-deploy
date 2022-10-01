@@ -1,4 +1,8 @@
-mongoURI: !? $env["MONGO_URI"]
+mysqlServerName: !? $env["MYSQL_URI"]
+mysqlPort: !? $env["MYSQL_PORT"]
+mysqlDatabaseName: bananosuite
+mysqlUsername: !? $env["MYSQL_BANANOSUITEUSER"]
+mysqlPassword: !? $env["MYSQL_BANANOSUITEPASSWORD"]
 
 EnableBananoSuite: true
 
@@ -24,8 +28,8 @@ MinimumTeleportDistance: 16
 # Death Insurance Configuration
 EnableDeathInsurance: true
 DeathInsuranceBasePremium: 19
-DeathInsuranceMaximumPremium: 1900
-DeathInsuranceGrowthRate: 0.19
+DeathInsuranceMaximumPremium: 100
+DeathInsuranceGrowthRate: 0.019
 
 # MonKey/QR Map Configuration
 monKeyImageSourceURL: https://monkey.banano.cc/api/v1/monkey/{address}?format=png&size=128&background=true
