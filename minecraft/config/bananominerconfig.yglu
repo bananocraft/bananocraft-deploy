@@ -12,6 +12,9 @@ EnableRandomPrizes: true
 MaxDailyEarn: 19.0
 LuckChance: 0.1
 
+AllowVPN: false
+AllowSharedIPAddress: false
+
 # Real life days
 BannedBlockExpiryAfterXDays: 30
 
