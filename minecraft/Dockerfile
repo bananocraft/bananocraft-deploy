@@ -87,7 +87,7 @@ COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
 #COPY deployplugins/bananominer-1.0.18.jar plugins/bananominer-1.0.18.jar
-COPY deployplugins/bananominer-1.0.21.jar plugins/bananominer-1.0.21.jar
+COPY deployplugins/bananominer-1.0.22.jar plugins/bananominer-1.0.22.jar
 #COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/bananosuite-1.0.11-SNAPSHOT.jar plugins/bananosuite-1.0.11-SNAPSHOT.jar
