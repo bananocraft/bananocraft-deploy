@@ -1,9 +1,5 @@
 
-mysqlServerName: !? $env["MYSQL_URI"]
-mysqlPort: !? $env["MYSQL_PORT"]
-mysqlDatabaseName: bananominer
-mysqlUsername: !? $env["MYSQL_BANANOMINERUSER"]
-mysqlPassword: !? $env["MYSQL_BANANOMINERPASSWORD"]
+mongoURI: !? $env["MONGO_URI"]
 
 EnableBananoMiner: true
 BasePrize: 0.19
@@ -12,8 +8,9 @@ EnableRandomPrizes: true
 MaxDailyEarn: 19.0
 LuckChance: 0.1
 
+EnableIPChecking: false
 AllowVPN: false
-AllowSharedIPAddress: false
+AllowSharedIPAddress: true
 
 # Real life days
 BannedBlockExpiryAfterXDays: 30

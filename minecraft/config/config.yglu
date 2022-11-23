@@ -4,11 +4,7 @@ walletID: !? $env["WALLET_ID"]
 masterWallet: !? $env["MASTER_WALLET"]
 
 # Database - for mongoDB, add the mongoURI (comment if using alternative)
-mysqlServerName: !? $env["MYSQL_URI"]
-mysqlPort: !? $env["MYSQL_PORT"]
-mysqlDatabaseName: bananocraft
-mysqlUsername: !? $env["MYSQL_BANANOCRAFTUSER"]
-mysqlPassword: !? $env["MYSQL_BANANOCRAFTPASSWORD"]
+mongoURI: !? $env["MONGO_URI"]
 
 # Database - for MySQL, uncomment and populate the mysql config (comment if using alternative)
 #mysqlServerName: "dbservername"

@@ -1,8 +1,4 @@
-mysqlServerName: !? $env["MYSQL_URI"]
-mysqlPort: !? $env["MYSQL_PORT"]
-mysqlDatabaseName: bananosuite
-mysqlUsername: !? $env["MYSQL_BANANOSUITEUSER"]
-mysqlPassword: !? $env["MYSQL_BANANOSUITEPASSWORD"]
+mongoURI: !? $env["MONGO_URI"]
 
 EnableBananoSuite: true
 
