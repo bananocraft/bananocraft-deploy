@@ -17,3 +17,5 @@ multiplier: "100000000000000000000000000000"
 
 exploreaccount: "https://creeper.banano.cc/explorer/account/" #banano
 exploreblock: "https://creeper.banano.cc/explorer/block/" #banano
+
+allowofflinepayment: true

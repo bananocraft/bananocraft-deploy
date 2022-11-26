@@ -81,7 +81,7 @@ RUN rm -f plugins/PvPToggle-*.jar
 
 #COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.1.0-SNAPSHOT.jar
 #COPY deployplugins/BananoEconomy-1.1.3-SNAPSHOT.jar plugins/BananoEconomy-1.1.3-SNAPSHOT.jar
-COPY deployplugins/BananoEconomy-1.2.1-SNAPSHOT.jar plugins/BananoEconomy-1.2.1-SNAPSHOT.jar
+COPY deployplugins/BananoEconomy-1.2.2-SNAPSHOT.jar plugins/BananoEconomy-1.2.2-SNAPSHOT.jar
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
