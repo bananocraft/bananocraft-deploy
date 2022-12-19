@@ -79,16 +79,12 @@ RUN rm -f plugins/ViaVersion-*.jar
 RUN rm -f plugins/PetShop-*.jar
 RUN rm -f plugins/PvPToggle-*.jar
 
-#COPY deployplugins/BananoEconomy-1.1.0-SNAPSHOT.jar plugins/BananoEconomy-1.1.0-SNAPSHOT.jar
-#COPY deployplugins/BananoEconomy-1.1.3-SNAPSHOT.jar plugins/BananoEconomy-1.1.3-SNAPSHOT.jar
 COPY deployplugins/BananoEconomy-1.2.2-SNAPSHOT.jar plugins/BananoEconomy-1.2.2-SNAPSHOT.jar
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
-#COPY deployplugins/bananominer-1.0.18.jar plugins/bananominer-1.0.18.jar
 COPY deployplugins/bananominer-1.0.25.jar plugins/bananominer-1.0.25.jar
-#COPY deployplugins/ViaVersion-4.3.2-SNAPSHOT.jar plugins/ViaVersion-4.3.2-SNAPSHOT.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/bananosuite-1.0.12-SNAPSHOT.jar plugins/bananosuite-1.0.12-SNAPSHOT.jar
 

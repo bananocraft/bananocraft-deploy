@@ -28,11 +28,11 @@ while true; do
     /bin/echo "Backups not complete!"
   fi
 
+  /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" save-on
+
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup forget --keep-hourly 24 --keep-daily 7 --keep-weekly 5 --keep-monthly 12 --keep-yearly 75 --prune
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup snapshots > available_snapshots.txt
   curl -F "payload_json={\"username\": \"bananocraftbot\", \"content\": \"available snapshots for $SERVER_NAME\"}" -F "file1=@available_snapshots.txt" $DISCORD_WEBHOOK_URL
   /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "check #backupbot channel on bananocraft.cc Discord for a log of available snapshots"
-
-  /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" save-on
 
 done
