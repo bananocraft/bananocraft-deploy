@@ -78,6 +78,8 @@ RUN rm -f plugins/Geyser-*.jar
 RUN rm -f plugins/ViaVersion-*.jar
 RUN rm -f plugins/PetShop-*.jar
 RUN rm -f plugins/PvPToggle-*.jar
+RUN rm -f plugins/8631.jar
+RUN rm -f plugins/CoreProtect*.jar
 
 COPY deployplugins/BananoEconomy-1.2.2-SNAPSHOT.jar plugins/BananoEconomy-1.2.2-SNAPSHOT.jar
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
@@ -87,6 +89,7 @@ COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/bananominer-1.0.25.jar plugins/bananominer-1.0.25.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/bananosuite-1.0.12-SNAPSHOT.jar plugins/bananosuite-1.0.12-SNAPSHOT.jar
+COPY deployplugins/CoreProtect-21.3.jar plugins/CoreProtect-21.3.jar
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png
