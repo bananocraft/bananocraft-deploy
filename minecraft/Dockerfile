@@ -39,6 +39,7 @@ RUN apt-get install sudo curl zip unzip python3-pip jq bash restic sudo rclone -
 RUN apt-get install tmux -y
 RUN apt-get install htop -y
 RUN apt-get install nano -y
+# RUN apt-get install sshd -y
 
 RUN pip3 install yglu
 
@@ -49,6 +50,7 @@ RUN git clone https://github.com/Tiiffi/mcrcon.git && cd mcrcon && make && make 
 COPY config/config.yglu .
 COPY config/bananominerconfig.yglu .
 COPY config/bananosuiteconfig.yglu .
+COPY config/bananochestsconfig.yglu .
 COPY config/geyserconfig.yglu .
 COPY config/petshopconfig.yglu .
 COPY config/pvptoggle.yglu .
@@ -61,6 +63,7 @@ RUN mkdir /scripts
 COPY config/config.yglu /scripts
 COPY config/bananominerconfig.yglu /scripts
 COPY config/bananosuiteconfig.yglu /scripts
+COPY config/bananochestsconfig.yglu /scripts
 COPY config/geyserconfig.yglu /scripts
 COPY config/petshopconfig.yglu /scripts
 COPY config/pvptoggle.yglu /scripts
@@ -69,9 +72,12 @@ COPY --chmod=755 restore.sh .
 COPY --chmod=755 check_backup.sh .
 COPY --chmod=755 backup.sh .
 
+COPY additionaldeployfiles/server-icon.png .
+
 RUN rm -f plugins/BananoEconomy-*.jar
 RUN rm -f plugins/bananominer-*.jar
 RUN rm -f plugins/bananosuite-*.jar
+RUN rm -f plugins/bananochests*.jar
 RUN rm -f plugins/EssentialsX-*.jar
 RUN rm -f plugins/LuckPerms-*.jar
 RUN rm -f plugins/Geyser-*.jar
@@ -80,16 +86,21 @@ RUN rm -f plugins/PetShop-*.jar
 RUN rm -f plugins/PvPToggle-*.jar
 RUN rm -f plugins/8631.jar
 RUN rm -f plugins/CoreProtect*.jar
+RUN rm -f plugins/NoEncryption*.jar
 
 COPY deployplugins/BananoEconomy-1.2.2-SNAPSHOT.jar plugins/BananoEconomy-1.2.2-SNAPSHOT.jar
+COPY deployplugins/bananominer-1.0.26.jar plugins/bananominer-1.0.26.jar
+COPY deployplugins/bananosuite-1.0.13-SNAPSHOT.jar plugins/bananosuite-1.0.13-SNAPSHOT.jar
+COPY deployplugins/bananochests-1.0.0-SNAPSHOT.jar plugins/bananochests-1.0.0-SNAPSHOT.jar
+
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
-COPY deployplugins/bananominer-1.0.25.jar plugins/bananominer-1.0.25.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
-COPY deployplugins/bananosuite-1.0.12-SNAPSHOT.jar plugins/bananosuite-1.0.12-SNAPSHOT.jar
 COPY deployplugins/CoreProtect-21.3.jar plugins/CoreProtect-21.3.jar
+
+COPY deployplugins/NoEncryption-1.19.2-3.1.jar plugins/NoEncryption-1.19.2-3.1.jar
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png

@@ -1,0 +1,7 @@
+# LockMode can be one of two values: Viewable or Sealed
+LockMode: Sealed
+
+# Set whether to auto-lock storage items on placing them down
+AutoLockBarrel: false
+AutoLockChest: false
+AutoLockShulker: true
