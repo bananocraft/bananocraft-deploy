@@ -91,7 +91,7 @@ RUN rm -f plugins/NoEncryption*.jar
 COPY deployplugins/BananoEconomy-1.2.2-SNAPSHOT.jar plugins/BananoEconomy-1.2.2-SNAPSHOT.jar
 COPY deployplugins/bananominer-1.0.26.jar plugins/bananominer-1.0.26.jar
 COPY deployplugins/bananosuite-1.0.13-SNAPSHOT.jar plugins/bananosuite-1.0.13-SNAPSHOT.jar
-COPY deployplugins/bananochests-1.0.0-SNAPSHOT.jar plugins/bananochests-1.0.0-SNAPSHOT.jar
+COPY deployplugins/bananochests-1.0.1-SNAPSHOT.jar plugins/bananochests-1.0.1-SNAPSHOT.jar
 
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.2.jar plugins/LuckPerms-Bukkit-5.4.2.jar
