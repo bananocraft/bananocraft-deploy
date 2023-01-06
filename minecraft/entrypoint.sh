@@ -11,6 +11,7 @@ yglu pvptoggle.yglu > pvptoggle.yml
 
 mkdir -p plugins/BananoEconomy
 mkdir -p plugins/BananoMiner
+mkdir -p plugins/BananoChests
 mkdir -p plugins/Vault
 mkdir -p plugins/Geyser-Spigot
 mkdir -p plugins/PetShop
