@@ -16,10 +16,10 @@ ENV SSH_PASSWORD=$SSH_PASSWORD
 ENV RCLONE_CONFIG_BANANOCRAFTBACKUPS_TYPE=storj
 ENV RCLONE_CONFIG_BANANOCRAFTBACKUPS_ACCESS_GRANT=$RCLONE_CONFIG_BANANOCRAFTBACKUPS_ACCESS_GRANT
 ENV RESTIC_PASSWORD=$RESTIC_PASSWORD
-ENV CHECK_BACKUP=false
-ENV RESTORE_FROM_BACKUP=false
-ENV RESTORE_VERSION=latest
-ENV BACKUP_MINUTE_INTERVAL=60
+ENV CHECK_BACKUP=$CHECK_BACKUP
+ENV RESTORE_FROM_BACKUP=$RESTORE_FROM_BACKUP
+ENV RESTORE_VERSION=$RESTORE_VERSION
+ENV BACKUP_MINUTE_INTERVAL=$BACKUP_MINUTE_INTERVAL
 ENV DISCORD_WEBHOOK_URL=$DISCORD_WEBHOOK_URL
 
 #ENV MYSQL_URI=$MYSQL_URI
@@ -88,9 +88,9 @@ RUN rm -f plugins/8631.jar
 RUN rm -f plugins/CoreProtect*.jar
 RUN rm -f plugins/NoEncryption*.jar
 
-COPY deployplugins/BananoEconomy-1.2.3-SNAPSHOT.jar plugins/BananoEconomy-1.2.3-SNAPSHOT.jar
+COPY deployplugins/BananoEconomy-1.2.4-SNAPSHOT.jar plugins/BananoEconomy-1.2.4-SNAPSHOT.jar
 COPY deployplugins/bananominer-1.0.26.jar plugins/bananominer-1.0.26.jar
-COPY deployplugins/bananosuite-1.0.14-SNAPSHOT.jar plugins/bananosuite-1.0.14-SNAPSHOT.jar
+COPY deployplugins/bananosuite-1.0.15-SNAPSHOT.jar plugins/bananosuite-1.0.15-SNAPSHOT.jar
 COPY deployplugins/bananochests-1.0.1-SNAPSHOT.jar plugins/bananochests-1.0.1-SNAPSHOT.jar
 
 COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
