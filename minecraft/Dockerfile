@@ -88,7 +88,7 @@ RUN rm -f plugins/8631.jar
 RUN rm -f plugins/CoreProtect*.jar
 RUN rm -f plugins/NoEncryption*.jar
 
-COPY deployplugins/BananoEconomy-1.2.4-SNAPSHOT.jar plugins/BananoEconomy-1.2.4-SNAPSHOT.jar
+COPY deployplugins/BananoEconomy-1.2.5-SNAPSHOT.jar plugins/BananoEconomy-1.2.5-SNAPSHOT.jar
 COPY deployplugins/bananominer-1.0.26.jar plugins/bananominer-1.0.26.jar
 COPY deployplugins/bananosuite-1.0.15-SNAPSHOT.jar plugins/bananosuite-1.0.15-SNAPSHOT.jar
 COPY deployplugins/bananochests-1.0.1-SNAPSHOT.jar plugins/bananochests-1.0.1-SNAPSHOT.jar
