@@ -36,7 +36,7 @@ if [ ! -f /data/.restored ] ; then
   fi
 fi
 
-source /data/backup.sh &
+#source /data/backup.sh &
 
 source /start &
 
