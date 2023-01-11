@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  sshdtest:
+    image: bananocraft/bananocraftserver:${BANANOCRAFT_SERVER_VERSION}
+    environment:
+      - SSH_PASSWORD=adsfsadf
+      - EULA=TRUE
+      - PVP=TRUE
+      - MOTD="Hard Mode Survival Bananocraft Akash POC"
+      - MODE=survival
+      - ENABLE_COMMAND_BLOCK=true
+      - ENABLE_RCON=false
+      - SPAWN_PROTECTION=1
+      - HARDCORE=false
+      - MAX_PLAYERS=20
+      - OPS=k1rby,mconstant
+      - DIFFICULTY=hard
+      - SERVER_NAME=SurvivalBananocraftAkash
+      - MEMORY=4G
+      - TYPE=PAPER
+      - BANANODE_IP=asdfasdfasdfsadfadsf
+      - BANANOCRAFT_WALLET_SEED=asdfasdfasdfasdfsadfsadf
+      - MASTER_WALLET=asdfasdfdsafsadf
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=asdfasdfasdf
+      - MONGO_URI=mongodb://root:asdfasdf@asdfasdfasdfdsafsdafadsf
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - BANANOCRAFT_SERVER_VERSION=sshd-1
+    container_name: sshdtest
+    hostname: sshdtest
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+      - "2222:2222"

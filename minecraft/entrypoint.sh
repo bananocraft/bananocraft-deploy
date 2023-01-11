@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -eE -o pipefail
 
+/usr/sbin/sshd
+
 yglu config.yglu > config.yml
 yglu bananominerconfig.yglu > bananominerconfig.yml
 yglu bananosuiteconfig.yglu > bananosuiteconfig.yml
