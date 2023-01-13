@@ -39,6 +39,7 @@ RUN apt-get install sudo curl zip unzip python3-pip jq bash restic sudo rclone -
 RUN apt-get install tmux -y
 RUN apt-get install htop -y
 RUN apt-get install nano -y
+RUN apt-get install openssh-server -y
 # RUN apt-get install sshd -y
 
 RUN pip3 install yglu
@@ -106,6 +107,17 @@ COPY deployplugins/NoEncryption-1.19.2-3.1.jar plugins/NoEncryption-1.19.2-3.1.j
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png
 
 COPY --chmod=755 entrypoint.sh .
+
+RUN mkdir /root/.ssh
+RUN touch /root/.ssh/authorized_keys
+RUN echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEWUMQ0uBwXpPavVmWijhQF+3JJ4TYHGXD3gTGhsmSov mconstant" >> /root/.ssh/authorized_keys
+RUN echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEaIq4irJKOKx6qbsvp/m7/T6dn0f7/GFYfHD7/coKuA allhailbanano" >> /root/.ssh/authorized_keys
+
+RUN service ssh start
+
+COPY sshd_config /etc/ssh/sshd_config
+
+EXPOSE 22
 
 ENTRYPOINT ["./entrypoint.sh"]
 

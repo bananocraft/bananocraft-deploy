@@ -2,3 +2,5 @@
 *.local
 accessgrant.txt
 .keyfile
+
+.idea/
