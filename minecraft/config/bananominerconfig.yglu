@@ -384,3 +384,242 @@ BREEDER:
     Chance: 2.5
     MinimumMultiplier: 0.1
     MaximumMultiplier: 0.6
+
+ENCHANTER:
+  WOODEN_PICKAXE:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  WOODEN_AXE:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  WOODEN_SWORD:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  WOODEN_HOE:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  WOODEN_SHOVEL:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  STONE_PICKAXE:
+    Chance: 0.75
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  STONE_AXE:
+    Chance: 0.75
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  STONE_SWORD:
+    Chance: 0.75
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  STONE_HOE:
+    Chance: 0.75
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  STONE_SHOVEL:
+    Chance: 0.75
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  IRON_PICKAXE:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_AXE:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_SWORD:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_HOE:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_SHOVEL:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  IRON_HELMET:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_CHESTPLATE:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_LEGGINGS:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  IRON_BOOTS:
+    Chance: 1.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  GOLDEN_PICKAXE:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_AXE:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_SWORD:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_HOE:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_SHOVEL:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  GOLDEN_HELMET:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_CHESTPLATE:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_LEGGINGS:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  GOLDEN_BOOTS:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  DIAMOND_PICKAXE:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_AXE:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_SWORD:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_HOE:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_SHOVEL:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  DIAMOND_HELMET:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_CHESTPLATE:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_LEGGINGS:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  DIAMOND_BOOTS:
+    Chance: 2.0
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  NETHERITE_PICKAXE:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_AXE:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_SWORD:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_HOE:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_SHOVEL:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  NETHERITE_HELMET:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_CHESTPLATE:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_LEGGINGS:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  NETHERITE_BOOTS:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  CHAINMAIL_HELMET:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  CHAINMAIL_CHESTPLATE:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  CHAINMAIL_LEGGINGS:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  CHAINMAIL_BOOTS:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  LEATHER_HELMET:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  LEATHER_CHESTPLATE:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  LEATHER_LEGGINGS:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  LEATHER_BOOTS:
+    Chance: 0.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  TURTLE_HELMET:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+
+  FISHING_ROD:
+    Chance: 1.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
