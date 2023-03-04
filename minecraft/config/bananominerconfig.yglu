@@ -20,6 +20,11 @@ BannedBlockExpiryAfterXDays: 30
 LastMoveTicks: 12000
 LastSleepTicks: 72000
 
+RAID_WIN_PRIZE:
+  Chance: 10
+  MinimumMultiplier: 0.01
+  MaximumMultiplier: 2.5
+
 RANDOM_MINE_PRIZE:
   Chance: 0.3
   MinimumMultiplier: 0.01
