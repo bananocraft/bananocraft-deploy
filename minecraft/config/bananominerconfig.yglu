@@ -25,6 +25,12 @@ RAID_WIN_PRIZE:
   MinimumMultiplier: 0.01
   MaximumMultiplier: 2.5
 
+LIGHTNING:
+  PrizeRadius: 16
+  Chance: 10
+  MinimumMultiplier: 0.01
+  MaximumMultiplier: 2.5
+
 RANDOM_MINE_PRIZE:
   Chance: 0.3
   MinimumMultiplier: 0.01
