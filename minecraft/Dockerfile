@@ -88,6 +88,7 @@ RUN rm -f plugins/PvPToggle-*.jar
 RUN rm -f plugins/8631.jar
 RUN rm -f plugins/CoreProtect*.jar
 RUN rm -f plugins/NoEncryption*.jar
+RUN rm -f plugins/grimac*.jar
 
 COPY deployplugins/BananoEconomy-1.2.5-SNAPSHOT.jar plugins/BananoEconomy-1.2.5-SNAPSHOT.jar
 COPY deployplugins/bananominer-1.0.30.jar plugins/bananominer-1.0.30.jar
@@ -101,6 +102,7 @@ COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/CoreProtect-21.3.jar plugins/CoreProtect-21.3.jar
 
+COPY deployplugins/grimac-2.3.37.jar plugins/grimac-2.3.37.jar
 COPY deployplugins/NoEncryption-1.19.3-4.1.jar plugins/NoEncryption-1.19.3-4.1.jar
 
 # Copy BananoSuite frame images
