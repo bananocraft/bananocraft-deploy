@@ -102,7 +102,7 @@ COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/CoreProtect-21.3.jar plugins/CoreProtect-21.3.jar
 
-#COPY deployplugins/grimac-2.3.37.jar plugins/grimac-2.3.37.jar
+COPY deployplugins/grimac-2.3.37.jar plugins/grimac-2.3.37.jar
 COPY deployplugins/NoEncryption-1.19.3-5.0.jar plugins/NoEncryption-1.19.3-5.0.jar
 
 # Copy BananoSuite frame images
