@@ -4,6 +4,7 @@ mongoURI: !? $env["MONGO_URI"]
 EnableBananoMiner: true
 BasePrize: 0.19
 Debug: true
+EnhancedDebug: false
 EnableRandomPrizes: true
 MaxDailyEarn: 19.0
 LuckChance: 0.5
@@ -21,9 +22,9 @@ LastMoveTicks: 12000
 LastSleepTicks: 72000
 
 RAID_WIN_PRIZE:
-  Chance: 10
-  MinimumMultiplier: 0.01
-  MaximumMultiplier: 2.5
+  Chance: 35
+  MinimumMultiplier: 0.5
+  MaximumMultiplier: 10
 
 LIGHTNING:
   PrizeRadius: 16
@@ -36,6 +37,8 @@ RANDOM_MINE_PRIZE:
   MinimumMultiplier: 0.01
   MaximumMultiplier: 1.0
   SilkTouch: false
+  MinimumKills: 1
+  DamageThresholdPercent: 30
 
 # Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
 # and the reward multiplier below.
