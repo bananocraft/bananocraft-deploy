@@ -4,7 +4,7 @@ mongoURI: !? $env["MONGO_URI"]
 EnableBananoMiner: true
 BasePrize: 0.19
 Debug: true
-EnhancedDebug: false
+EnhancedDebug: true
 EnableRandomPrizes: true
 MaxDailyEarn: 19.0
 LuckChance: 0.5
