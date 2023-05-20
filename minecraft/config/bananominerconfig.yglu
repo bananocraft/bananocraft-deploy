@@ -8,6 +8,8 @@ EnhancedDebug: true
 EnableRandomPrizes: true
 MaxDailyEarn: 19.0
 LuckChance: 0.5
+# Where Luck books can be found. Applicable Values: BOOKSHELVES / ENCHANTING / ALL
+LuckSource: ALL
 
 EnableIPChecking: false
 AllowVPN: false
@@ -21,8 +23,13 @@ BannedBlockExpiryAfterXDays: 30
 LastMoveTicks: 12000
 LastSleepTicks: 72000
 
+ADVANCEMENT:
+  Chance: 20
+  MinimumMultiplier: 0.01
+  MaximumMultiplier: 2.5
+
 RAID_WIN_PRIZE:
-  Chance: 35
+  Chance: 25
   MinimumMultiplier: 0.5
   MaximumMultiplier: 10
 
