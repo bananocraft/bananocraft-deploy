@@ -2,7 +2,7 @@
 
 echo "restoring from backup $RESTORE_VERSION"
 RESTIC_PASSWORD=$RESTIC_PASSWORD restic --no-lock --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup unlock || true
-#RESTIC_PASSWORD=$RESTIC_PASSWORD restic --no-lock --repo rclone:bananocraft:bananocraftbackups/benis-backup unlock || true
+#RESTIC_PASSWORD=$RESTIC_PASSWORD restic --no-lock --repo rclone:bananocraft:bananocraftbackups/benisnew-backup unlock || true
 mkdir /restorefiles
 mkdir /restore
 mkdir /restorefiles/data
@@ -14,8 +14,13 @@ mkdir /restorefiles/data/plugins/BananoSuite/frames
 mkdir /restorefiles/data/plugins/PetShop
 mkdir /restorefiles/data/plugins/Geyser-Spigot
 mkdir /restorefiles/data/plugins/PvPToggle
+
+mkdir /restorefiles/data/.config
+mkdir /restorefiles/data/.config/rclone
+cp /root/.config/rclone/rclone.conf /restorefiles/data/.config/rclone/rclone.conf
+
 RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup restore $RESTORE_VERSION --target /restorefiles
-#RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/benis-backup restore $RESTORE_VERSION --target /restorefiles
+#RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/benisnew-backup restore $RESTORE_VERSION --target /restorefiles
 yglu /scripts/config.yglu > /restorefiles/data/plugins/BananoEconomy/config.yml
 yglu /scripts/bananominerconfig.yglu > /restorefiles/data/plugins/BananoMiner/config.yml
 yglu /scripts/geyserconfig.yglu > /restorefiles/data/plugins/Geyser-Spigot/config.yml

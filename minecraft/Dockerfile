@@ -91,19 +91,20 @@ RUN rm -f plugins/NoEncryption*.jar
 RUN rm -f plugins/grimac*.jar
 
 COPY deployplugins/BananoEconomy-1.2.5-SNAPSHOT.jar plugins/BananoEconomy-1.2.5-SNAPSHOT.jar
-COPY deployplugins/bananominer-1.0.34.jar plugins/bananominer-1.0.34.jar
+COPY deployplugins/bananominer-1.0.35.jar plugins/bananominer-1.0.35.jar
 COPY deployplugins/bananosuite-1.0.15-SNAPSHOT.jar plugins/bananosuite-1.0.15-SNAPSHOT.jar
 COPY deployplugins/bananochests-1.0.1-SNAPSHOT.jar plugins/bananochests-1.0.1-SNAPSHOT.jar
 
-COPY deployplugins/EssentialsX-2.19.7.jar plugins/EssentialsX-2.19.7.jar
+COPY deployplugins/EssentialsX-2.20.0.jar plugins/EssentialsX-2.20.0.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.79.jar plugins/LuckPerms-Bukkit-5.4.79.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
 COPY deployplugins/CoreProtect-21.3.jar plugins/CoreProtect-21.3.jar
 
-COPY deployplugins/grimac-2.3.40.jar plugins/grimac-2.3.40.jar
-COPY deployplugins/NoEncryption-1.19.4-5.1.jar plugins/NoEncryption-1.19.4-5.1.jar
+COPY deployplugins/grimac-2.3.43.jar plugins/grimac-2.3.43.jar
+#COPY deployplugins/NoEncryption-1.19.4-5.2.jar plugins/NoEncryption-1.19.4-5.2.jar
+COPY deployplugins/NoEncryption-1.20.1-5.2.jar plugins/NoEncryption-1.20.1-5.2.jar
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png
