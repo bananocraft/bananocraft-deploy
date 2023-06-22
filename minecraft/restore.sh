@@ -29,7 +29,10 @@ rm -f /restorefiles/data/plugins/CoreProtect/database.db
 
 sudo chown -R 1000:1000 /restorefiles
 sudo chown -R 1000:1000 /data
-zip -r /restore/restore.zip /restorefiles
+
+#zip -r /restore/restore.zip /restorefiles/data
+(cd /restorefiles && zip -r /restore/restore.zip .)
+
 rm -rf /restorefiles
 export GENERIC_PACK=/restore/restore.zip
 

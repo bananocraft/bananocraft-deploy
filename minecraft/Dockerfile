@@ -1,4 +1,4 @@
-FROM itzg/minecraft-server:master
+FROM itzg/minecraft-server:latest
 
 ENV SERVER_NAME=$SERVER_NAME
 ENV RCON_PORT=$RCON_PORT
