@@ -95,7 +95,7 @@ COPY deployplugins/bananominer-1.0.35.jar plugins/bananominer-1.0.35.jar
 COPY deployplugins/bananosuite-1.0.15-SNAPSHOT.jar plugins/bananosuite-1.0.15-SNAPSHOT.jar
 COPY deployplugins/bananochests-1.0.1-SNAPSHOT.jar plugins/bananochests-1.0.1-SNAPSHOT.jar
 
-COPY deployplugins/EssentialsX-2.20.0.jar plugins/EssentialsX-2.20.0.jar
+COPY deployplugins/EssentialsX-2.21.0.jar plugins/EssentialsX-2.21.0.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.79.jar plugins/LuckPerms-Bukkit-5.4.79.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
@@ -108,6 +108,9 @@ COPY deployplugins/NoEncryption-1.20.1-5.2.jar plugins/NoEncryption-1.20.1-5.2.j
 
 # Copy BananoSuite frame images
 COPY additionaldeployfiles/Plugins/BananoSuite/frames/frame.png plugins/BananoSuite/frames/frame.png
+
+# Copy MCA Selector
+COPY additionaldeployfiles/mcaselector-2.2.2.jar /root/mcaselector-2.2.2.jar
 
 COPY --chmod=755 entrypoint.sh .
 

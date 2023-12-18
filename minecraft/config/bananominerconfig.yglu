@@ -229,6 +229,11 @@ CHOPPER:
     MinimumMultiplier: 0.1
     MaximumMultiplier: 1.2
     SilkTouch: false
+  CHERRY_LOG:
+    Chance: 1
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 1.5
+    SilkTouch: true
 
 FISHER:
   SALMON:
@@ -321,6 +326,10 @@ BREEDER:
     Chance: 2.5
     MinimumMultiplier: 0.1
     MaximumMultiplier: 0.6
+  CAMEL:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
   CAT:
     Chance: 2.5
     MinimumMultiplier: 0.1
@@ -390,6 +399,10 @@ BREEDER:
     MinimumMultiplier: 0.1
     MaximumMultiplier: 0.6
   SHEEP:
+    Chance: 2.5
+    MinimumMultiplier: 0.1
+    MaximumMultiplier: 0.6
+  SNIFFER:
     Chance: 2.5
     MinimumMultiplier: 0.1
     MaximumMultiplier: 0.6
