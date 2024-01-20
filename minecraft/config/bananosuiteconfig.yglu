@@ -17,7 +17,7 @@ RestrictHomeToOverworld: true
 # Spawn Teleport Configuration
 FreeSpawnTeleport: false
 TeleportBasePremium: 1.9
-TeleportMaximumPremium: 250
+TeleportMaximumPremium: 190
 TeleportGrowthRate: 0.08
 MinimumTeleportDistance: 16
 
@@ -26,6 +26,14 @@ EnableDeathInsurance: true
 DeathInsuranceBasePremium: 19
 DeathInsuranceMaximumPremium: 100
 DeathInsuranceGrowthRate: 0.019
+
+# Wild Teleport Configuration
+MaximumWildTeleportRadius: 10000
+SpawnInBoatOnWater: true
+SpawnInBoatType: OAK
+MaxSearchXOnLava: 10
+MaximumWildTeleportUses: 3
+WildTeleportCosts: [0,1.9,6.9]
 
 # MonKey/QR Map Configuration
 monKeyImageSourceURL: https://monkey.banano.cc/api/v1/monkey/{address}?format=png&size=128&background=true
