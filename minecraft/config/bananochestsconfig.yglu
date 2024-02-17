@@ -5,3 +5,4 @@ LockMode: Sealed
 AutoLockBarrel: false
 AutoLockChest: false
 AutoLockShulker: true
+AutoLockHopper: true

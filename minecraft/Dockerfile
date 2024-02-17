@@ -93,9 +93,9 @@ RUN rm -f plugins/grimac*.jar
 COPY deployplugins/BananoEconomy-1.2.5-SNAPSHOT.jar plugins/BananoEconomy-1.2.5-SNAPSHOT.jar
 COPY deployplugins/bananominer-1.0.36.jar plugins/bananominer-1.0.36.jar
 COPY deployplugins/bananosuite-1.0.16.jar plugins/bananosuite-1.0.16.jar
-COPY deployplugins/bananochests-1.0.1-SNAPSHOT.jar plugins/bananochests-1.0.1-SNAPSHOT.jar
+COPY deployplugins/bananochests-1.0.2-SNAPSHOT.jar plugins/bananochests-1.0.2-SNAPSHOT.jar
 
-COPY deployplugins/EssentialsX-2.21.0.jar plugins/EssentialsX-2.21.0.jar
+COPY deployplugins/EssentialsX-2.20.1.jar plugins/EssentialsX-2.20.1.jar
 COPY deployplugins/LuckPerms-Bukkit-5.4.79.jar plugins/LuckPerms-Bukkit-5.4.79.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
