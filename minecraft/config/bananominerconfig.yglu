@@ -47,6 +47,12 @@ RANDOM_MINE_PRIZE:
   MinimumKills: 1
   DamageThresholdPercent: 30
 
+# Maximum Random Boost format enables days, hours or minutes. Format: [Qty] [DAYS|HOURS|MINUTES] or [QTY] [D|H|M]. Spacing doesn't matter.
+RANDOM_BOOST:
+  MinimumBoost: 15M
+  MaximumBoost: 60M
+  Chance: 0.19
+
 # Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
 # and the reward multiplier below.
 MINER:

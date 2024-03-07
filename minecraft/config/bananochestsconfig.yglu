@@ -6,3 +6,6 @@ AutoLockBarrel: false
 AutoLockChest: false
 AutoLockShulker: true
 AutoLockHopper: true
+AutoLockBeacon: true
+AutoLockConduit: false
+AutoLockBookshelf: false
