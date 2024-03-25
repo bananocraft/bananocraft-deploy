@@ -51,7 +51,7 @@ RANDOM_MINE_PRIZE:
 RANDOM_BOOST:
   MinimumBoost: 15M
   MaximumBoost: 60M
-  Chance: 0.19
+  Chance: 0.12
 
 # Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
 # and the reward multiplier below.

@@ -96,13 +96,13 @@ COPY deployplugins/bananosuite-1.0.16.jar plugins/bananosuite-1.0.16.jar
 COPY deployplugins/bananochests-1.0.5-SNAPSHOT.jar plugins/bananochests-1.0.5-SNAPSHOT.jar
 
 COPY deployplugins/EssentialsX-2.20.1.jar plugins/EssentialsX-2.20.1.jar
-COPY deployplugins/LuckPerms-Bukkit-5.4.79.jar plugins/LuckPerms-Bukkit-5.4.79.jar
+COPY deployplugins/LuckPerms-Bukkit-5.4.121.jar plugins/LuckPerms-Bukkit-5.4.121.jar
 COPY deployplugins/Geyser-Spigot.jar plugins/Geyser-Spigot.jar
 COPY deployplugins/Vault.jar plugins/Vault.jar
 COPY deployplugins/PetShop-1.4.1.jar plugins/PetShop-1.4.1.jar
-COPY deployplugins/CoreProtect-21.3.jar plugins/CoreProtect-21.3.jar
+COPY deployplugins/CoreProtect-22.2.jar plugins/CoreProtect-22.2.jar
 
-COPY deployplugins/grimac-2.3.43.jar plugins/grimac-2.3.43.jar
+COPY deployplugins/grimac-2.3.61.jar plugins/grimac-2.3.61.jar
 #COPY deployplugins/NoEncryption-1.19.4-5.2.jar plugins/NoEncryption-1.19.4-5.2.jar
 COPY deployplugins/NoEncryption-1.20.1-5.2.jar plugins/NoEncryption-1.20.1-5.2.jar
 
