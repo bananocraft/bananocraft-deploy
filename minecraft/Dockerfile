@@ -91,7 +91,7 @@ RUN rm -f plugins/NoEncryption*.jar
 RUN rm -f plugins/grimac*.jar
 
 COPY deployplugins/BananoEconomy-1.2.5-SNAPSHOT.jar plugins/BananoEconomy-1.2.5-SNAPSHOT.jar
-COPY deployplugins/bananominer-1.0.37.jar plugins/bananominer-1.0.37.jar
+COPY deployplugins/bananominer-1.0.38.jar plugins/bananominer-1.0.38.jar
 COPY deployplugins/bananosuite-1.0.16.jar plugins/bananosuite-1.0.16.jar
 COPY deployplugins/bananochests-1.0.5-SNAPSHOT.jar plugins/bananochests-1.0.5-SNAPSHOT.jar
 
