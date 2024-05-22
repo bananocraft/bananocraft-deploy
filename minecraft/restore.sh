@@ -30,7 +30,7 @@ yglu /scripts/pvptoggle.yglu > /restorefiles/data/plugins/PvPToggle/config.yml
 
 # Remove any old plugins that we don't include in the deployment any more. The ones we want will be redeployed as part of the server deployment.
 rm -f /restorefiles/data/plugins/*.jar
-rm -f /restorefiles/data/plugins/CoreProtect/database.db
+# rm -f /restorefiles/data/plugins/CoreProtect/database.db
 
 sudo chown -R 1000:1000 /restorefiles
 sudo chown -R 1000:1000 /data

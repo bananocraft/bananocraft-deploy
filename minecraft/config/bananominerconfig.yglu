@@ -16,7 +16,7 @@ AllowVPN: false
 AllowSharedIPAddress: true
 
 # Real life days
-BannedBlockExpiryAfterXDays: 30
+BannedBlockExpiryAfterXDays: 3
 
 # Tired of cleaning up creeper holes? Temporarily auto-ban those players!
 CreeperTempBanDuration: 60M
@@ -55,7 +55,7 @@ RANDOM_MINE_PRIZE:
 RANDOM_BOOST:
   MinimumBoost: 15M
   MaximumBoost: 60M
-  Chance: 0.12
+  Chance: 0.1
 
 # Enter the material type as the group, followed by the chance in % (so 0.5 = 0.5%)
 # and the reward multiplier below.

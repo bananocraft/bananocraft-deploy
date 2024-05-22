@@ -16,15 +16,15 @@ RestrictHomeToOverworld: true
 
 # Spawn Teleport Configuration
 FreeSpawnTeleport: false
-TeleportBasePremium: 1.9
-TeleportMaximumPremium: 190
-TeleportGrowthRate: 0.08
+TeleportBasePremium: 0.69
+TeleportMaximumPremium: 69
+TeleportGrowthRate: 0.06
 MinimumTeleportDistance: 16
 
 # Death Insurance Configuration
 EnableDeathInsurance: true
-DeathInsuranceBasePremium: 19
-DeathInsuranceMaximumPremium: 100
+DeathInsuranceBasePremium: 6.9
+DeathInsuranceMaximumPremium: 69
 DeathInsuranceGrowthRate: 0.019
 
 # Wild Teleport Configuration
