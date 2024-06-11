@@ -9,7 +9,7 @@ while true; do
   /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "say Backing up server."
   curl -H "Content-Type: application/json" -d "{\"username\": \"bananocraftbot\", \"content\": \"Backing up bananocraft server ${SERVER_NAME}\"}" $DISCORD_WEBHOOK_URL
   # De-activate the CoreProtect consumer to pause database writes
-  /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "co consumer"
+  #/usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "co consumer"
   /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" save-off
   /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" save-all
 
@@ -32,7 +32,7 @@ while true; do
 
   /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" save-on
   # Re-activate the CoreProtect consumer to re-enable database writes
-  /usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "co consumer"
+  #/usr/local/bin/mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "co consumer"
 
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup forget --keep-hourly 24 --keep-daily 7 --keep-weekly 5 --keep-monthly 12 --keep-yearly 75 --prune
   RESTIC_PASSWORD=$RESTIC_PASSWORD restic --repo rclone:bananocraft:bananocraftbackups/${SERVER_NAME}-backup snapshots > available_snapshots.txt
